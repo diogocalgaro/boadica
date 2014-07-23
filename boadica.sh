@@ -71,11 +71,11 @@ do
 		then
 			cod=""
 			i=$(sqlite3 -csv $db "select id, descricao from vw_buscar_item_ultimo_preco where produto like '%${p}%';" | tr '\n' ' ' | tr ',' ' ')
-			i="${i} ' ' ' ' Voltar ------------------------------"
+			i="${i} ' ' ' ' Voltar =============================="
 
 			while [ "$cod" != "Voltar" ]
 			do
-				eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Produtos encontrados' 30 120 25 ${i} 3>&2 2>&1 1>&3)"
+				eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Produtos encontrados' 30 130 22 ${i} 3>&2 2>&1 1>&3)"
 
 				if [ "$cod" != "Voltar" ]
 				then
@@ -122,7 +122,7 @@ do
 		then
 			i=$(sqlite3 -csv $db "select id, nome||' ('||localizacao||')' as item from tb_lojas where nome like '%${l}%';" | tr '\n' ' ' | tr ',' ' ')
 
-			eval "cod=\$(whiptail --menu 'Selecione a loja' 30 80 25 ${i} 3>&2 2>&1 1>&3)"
+			eval "cod=\$(whiptail --menu 'Selecione a loja' 30 100 22 ${i} 3>&2 2>&1 1>&3)"
 			if [ -n "$cod" ]
 			then
 				$naveg "${pag_vendedor}${cod}" 2>&1 >/dev/null &
@@ -137,13 +137,13 @@ do
 	elif [ "$op" == "T" ]
 	then
 		cod=""
-		i="Voltar ------------------------------ ' ' ' '"
+		i="Voltar ============================== ' ' ' '"
 		j=$(sqlite3 -csv $db "select id, item from vw_obter_lista_produtos;" | tr '\n' ' ' | tr ',' ' ')
-		i="${i} ${j} ' ' ' ' Voltar ------------------------------"
+		i="${i} ${j} ' ' ' ' Voltar =============================="
 
 		while [ "$cod" != "Voltar" ]
 		do
-			eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Todos os produtos' 30 120 25 ${i} 3>&2 2>&1 1>&3)"
+			eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Todos os produtos' 30 130 22 ${i} 3>&2 2>&1 1>&3)"
 
 			if [ "$cod" != "Voltar" ]
 			then
@@ -154,11 +154,11 @@ do
 	then
 		cod=""
 		i=$(sqlite3 -csv $db "select id, descricao from vw_buscar_favorito_id;" | tr '\n' ' ' | tr ',' ' ')
-		i="${i} ' ' ' ' Voltar ------------------------------"
+		i="${i} ' ' ' ' Voltar =============================="
 
 		while [ "$cod" != "Voltar" ]
 		do
-			eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Favoritos' 50 120 45 ${i} 3>&2 2>&1 1>&3)"
+			eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Favoritos' 50 140 42 ${i} 3>&2 2>&1 1>&3)"
 
 			if [ "$cod" != "Voltar" ]
 			then
@@ -169,7 +169,7 @@ do
 	then
 		cod=""
 		i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 1" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
-		eval "cod=\"\$(whiptail --checklist 'Locais visíveis' 20 80 14 ${i} 3>&2 2>&1 1>&3)\""
+		eval "cod=\"\$(whiptail --checklist 'Locais visíveis' 22 80 14 ${i} 3>&2 2>&1 1>&3)\""
 		
 		if [ "$?" -eq 0 ]
 		then
@@ -185,7 +185,7 @@ do
 	then
 		cod=""
 		i=$(sqlite3 -csv -separator " " $db "select id, item, favorito from vw_obter_lista_produtos;" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
-		eval "cod=\"\$(whiptail --checklist 'Produtos favoritos' 40 100 34 ${i} 3>&2 2>&1 1>&3)\""
+		eval "cod=\"\$(whiptail --checklist 'Produtos favoritos' 40 100 32 ${i} 3>&2 2>&1 1>&3)\""
 
 		if [ "$?" -eq 0 ]
 		then

@@ -24,8 +24,8 @@ ult_idlocal=$(tail -n1 "$arq3" | cut -d';' -f1)
 prox_idlocal=$(( ult_idlocal + 1 )) #proximo valor de ID pra tabela LOCAIS
 
 #fazendo backup da base de dados
-rm ${db}.bak 2>/dev/null
-cp ${db}{,.bak}
+rm ${db}.gz 2>/dev/null
+gzip -k ${db}
 
 #preparando arquivo sql
 echo "begin;" >> "$sql"
@@ -84,6 +84,7 @@ do
 	fabricante=""
 	produto=""
 	preco=""
+	precof=""
 	idloja=""
 	loja=""
 	localizacao=""
@@ -116,7 +117,7 @@ do
 
 			echo "$sql_insert into produtos (id, fabricante, nome) values ($idprod, '$fabricante', '$produto');" >> "$sql"
 			echo "$sql_insert into lojas (id, nome, local) values ('$idloja', '$loja', '$idlocal');" >> "$sql"
-			echo "$sql_insert into precos (produto, loja, data, valor_num) values ($idprod, '$idloja', '$quando', '$preco');" >> "$sql"
+			echo "$sql_insert into precos (produto, loja, data, valor_num, valor_str) values ($idprod, '$idloja', '$quando', '$preco', '$precof');" >> "$sql"
 
 		elif [ "${i2:0:4}" == "<td>" ]
 		then
@@ -142,6 +143,8 @@ do
 				5) preco=${cont2/'R$'}
 				   preco=${preco//' '}
 				   preco=${preco/'</td'}
+				   preco=${preco/./}
+				   precof="$(printf '%.2f' $preco)"
 				   preco=${preco/,/.} ;;
 
 				6) loja="$(echo $cont2 | cut -d'>' -f2 | cut -d'<' -f1)"

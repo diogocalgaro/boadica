@@ -32,6 +32,13 @@ then
 	fatal "Dependência não encontrada: whiptail"
 fi
 
+#gzip
+which gzip > /dev/null 2>&1
+if [ $? -ne 0 ]
+then
+	fatal "Dependência não encontrada: gzip"
+fi
+
 #sqlite
 which sqlite3 > /dev/null 2>&1
 if [ $? -ne 0 ]
