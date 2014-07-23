@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="600" height="500">
+	<desc>Grafico de testes 1</desc>
+	<title>Gráfico</title>
+
+	<defs>
+		<g id="antes">
+			<!-- eixo x -->
+			<line x1="25" y1="475" x2="575" y2="475" stroke-width="2" stroke="black" />
+			<polygon points="595,475 575,485 575,465" stroke="black" />
+
+			<!-- eixo y -->
+			<line x1="25" y1="475" x2="25" y2="25" stroke-width="2" stroke="black" />
+			<polygon points="25,5 35,25 15,25" stroke="black" />
+
+			<!-- dados -->
+			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue"></text>
+		</g>
+	</defs>
+
+	<!-- grafico -->
+	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points=",475 25,475" />
+
+	<!-- desenhando elementos salvos para ficar no topo -->
+	<use xlink:href="#antes" />
+</svg>
