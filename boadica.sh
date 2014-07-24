@@ -2,23 +2,8 @@
 ################################################################################
 #
 # Script de consulta aos dados de uma categoria específica do site BoaDica
-# diogocalgaro@gmail.com - jul/14
 #
-# Testado com sucesso em:
-#   GNU/Linux Fedora 20
-#   com:
-#     bash 4.2.47
-#     sqlite3 3.8.5
-#
-#   GNU/Linux Ubuntu 14.04
-#   com:
-#     bash 4.3.8
-#     sqlite3 3.8.2
-#
-#  GNU/Linux CentOS 7.0
-#  com:
-#     bash 4.2.45
-#     sqlite3 3.7.17
+# github.com/diogocalgaro/boadica
 #
 ################################################################################
 
