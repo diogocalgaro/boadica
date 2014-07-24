@@ -1,7 +1,8 @@
 boadica
 =======
 
-Script em Bash para cache e consultas a uma categoria do Boadica.
+
+Script em Bash para cache e consultas a uma categoria do site Boadica.
 
 
 =====
@@ -15,12 +16,7 @@ $ git clone "https://github.com/diogocalgaro/boadica.git"
 =====
 
 
-Requisitos:
-
-whiptail 0.52.x
-sqlite 3.6.x
-bash 4.1.x
-
+Requisitos: whiptail 0.52.x, sqlite 3.6.x, bash 4.1.x.
 Testado no: Fedora 20, Ubuntu 14.04, CentOS 7.
 
 
@@ -37,10 +33,10 @@ $ ./boadica.sh
 
 Na primeira execução ele vai iniciar o setup.
 O setup vai:
- 1- criar uma nova base de dados sqlite3 a partir do dump do último modelo de dados
- 2- carregar as categorias disponíveis no menu "Pesquisa de preços" e perguntar sua escolha (só é possível escolher uma categoria no momento)
- 3- gravar o arquivo "config.inc"
- 4- sugerir a carga inicial dos dados (opcional)
+1- criar uma nova base de dados sqlite3 a partir do dump do último modelo de dados.
+2- carregar as categorias disponíveis no menu "Pesquisa de preços" e perguntar sua escolha (só é possível escolher uma categoria no momento).
+3- gravar o arquivo "config.inc".
+4- sugerir a carga inicial dos dados (opcional).
 
 
 =====
