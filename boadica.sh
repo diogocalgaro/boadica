@@ -14,23 +14,29 @@ then
 	exit $?
 fi
 
+
 #config basica
 source $(dirname $0)/config.inc
+
 
 #variaveis
 op="B"
 
-#obtendo tamanho do terminal e definindo os tamanhos de janelas
+
+#configuracoes de tamanho da janela
 eval "$(resize|head -n2|sed 's/^/export /g'|tr -d '\n')"
+
 if [ ${COLUMNS:-30} -le 30 -o ${LINES:-12} -le 12 ]
 then
 	echo "O terminal não atende ao tamanho mínimo de 30x12."
 	exit 1
 fi
+
 larg_jan_gr=$(( COLUMNS -6 )) #janelas grandes que ocupam toda a tela
 alt_jan_gr=$(( LINES -6 ))
 col_jan_gr=$(( larg_jan_gr -12 )) #largura da coluna descricao em janelas grandes
 menu_jan_gr=$(( alt_jan_gr -8 )) #altura util do menu em janelas grandes
+
 if [ ${larg_jan_gr:-0} -lt 50 ]
 then
 	larg_jan_pq=${larg_jan_gr:-0} #janelas pequenas centralizadas
@@ -44,6 +50,21 @@ else
 	alt_jan_pq=10
 fi
 menu_jan_pq=$(( alt_jan_pq -8 )) #altura util do menu em janelas pequenas
+
+if [ ${larg_jan_gr:-0} -lt 70 ]
+then
+	larg_jan_md=${larg_jan_gr:-0} #janelas pequenas centralizadas
+else
+	larg_jan_md=70
+fi
+if [ ${alt_jan_gr:-0} -lt 25 ]
+then
+	alt_jan_md=${alt_jan_gr:-0}
+else
+	alt_jan_md=25
+fi
+menu_jan_md=$(( alt_jan_md -8 )) #altura util do menu em janelas pequenas
+
 
 #laço principal
 while [ "$op" != "S" ]
@@ -115,10 +136,33 @@ do
 		rm $tmp
 	elif [ "$op" == "O" ]
 	then
-		tmp=$(mktemp)
-		sqlite3 -cmd ".width 18 48 20 8" -header -column $db "select * from vw_melhores_ofertas;" > $tmp
-		whiptail --title "Melhores ofertas" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
-		rm $tmp
+		cod=""
+		val_min="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_min';")"
+		val_max="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_max';")"
+
+		while [ "$cod" != "Voltar" ]
+		do
+			eval "cod=\$(whiptail --notags --menu 'Menu melhores ofertas' $alt_jan_md $larg_jan_md $menu_jan_md Ver \"Ver listagem das melhores ofertas\" Min \"[Config] Valor mínimo = $val_min\" Max \"[Config] Valor máximo = $val_max\" Voltar \"Voltar ====================\" 3>&2 2>&1 1>&3)"
+
+			if [ "$cod" == "Ver" ]
+			then
+				tmp=$(mktemp)
+				sqlite3 -cmd ".width 18 48 20 8" -header -column $db "select * from vw_melhores_ofertas;" > $tmp
+				whiptail --title "Lista das melhores ofertas" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
+				rm $tmp
+				cod="Voltar" #voltar direto pro menu principal
+			elif [ "$cod" == "Min" ]
+			then
+				v="$(whiptail --title "Configuração" --inputbox "Indique o valor mínimo:" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)"
+				val_min="${v:-0}"
+				sqlite3 $db "update configuracoes set valor='$val_min' where item='oferta_valor_min';"
+			elif [ "$cod" == "Max" ]
+			then
+				v="$(whiptail --title "Configuração" --inputbox "Indique o valor máximo:" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)"
+				val_max="${v:-0}"
+				sqlite3 $db "update configuracoes set valor='$val_max' where item='oferta_valor_max';"
+			fi
+		done
 	elif [ "$op" == "N" ]
 	then
 		tmp=$(mktemp)
@@ -143,7 +187,7 @@ do
 	then
 		tmp=$(mktemp)
 		sqlite3 -cmd ".width 48" -header -column $db "select * from vw_obter_estatisticas;" > $tmp
-		whiptail --title "Estatísticas da base de dados" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
+		whiptail --title "Estatísticas da base de dados" --textbox $tmp $alt_jan_md $larg_jan_md
 		rm $tmp
 	elif [ "$op" == "T" ]
 	then

@@ -15,42 +15,42 @@
 			<polygon points="25,5 35,25 15,25" stroke="black" />
 
 			<!-- dados -->
-			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">BioWare - Mass Effect 3</text>
-			<circle cx="25" cy="295" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="25" y="290" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">60</text>
+			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">Codemasters - GRID Autosport</text>
+			<circle cx="25" cy="46" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="25" y="41" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">143</text>
 			<text x="20" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">11/07</text>
-			<circle cx="75" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="75" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="75" cy="40" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="75" y="35" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">145</text>
 			<text x="70" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">14/07</text>
-			<circle cx="125" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="125" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="125" cy="40" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="125" y="35" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">145</text>
 			<text x="120" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">15/07</text>
-			<circle cx="175" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="175" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="175" cy="52" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="175" y="47" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">141</text>
 			<text x="170" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">16/07</text>
-			<circle cx="225" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="225" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="225" cy="55" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="225" y="50" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">140</text>
 			<text x="220" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">17/07</text>
-			<circle cx="275" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="275" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="275" cy="52" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="275" y="47" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">141</text>
 			<text x="270" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">18/07</text>
-			<circle cx="325" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="325" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="325" cy="52" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="325" y="47" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">141</text>
 			<text x="320" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">21/07</text>
-			<circle cx="375" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="375" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="375" cy="55" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="375" y="50" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">140</text>
 			<text x="370" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">22/07</text>
-			<circle cx="425" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="425" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="425" cy="55" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="425" y="50" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">140</text>
 			<text x="420" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">23/07</text>
-			<circle cx="475" cy="325" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="475" y="320" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">50</text>
+			<circle cx="475" cy="55" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="475" y="50" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">140</text>
 			<text x="470" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">24/07</text>
 		</g>
 	</defs>
 
 	<!-- grafico -->
-	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,295 75,325 125,325 175,325 225,325 275,325 325,325 375,325 425,325 475,325 475,475 25,475" />
+	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,46 75,40 125,40 175,52 225,55 275,52 325,52 375,55 425,55 475,55 475,475 25,475" />
 
 	<!-- desenhando elementos salvos para ficar no topo -->
 	<use xlink:href="#antes" />

@@ -102,20 +102,10 @@ rm "$arq1"
 rm "$arq2"
 
 #procurando um visualizador de imagens svg
-view_cmd=""
-for i in ${view_opcoes}
-do
-        which $i > /dev/null 2>&1
-        if [ $? -eq 0 ]
-        then
-                view_cmd="$i"
-                break
-        fi
-done
+view_cmd="$(which $view_opcoes xdg-open 2>/dev/null | head -n1)"
 if [ -z "${view_cmd}" ]
 then
         echo "ERRO: Não foi possível encontrar um programa para abrir .svg"
 	exit 1
 fi
-
 eval "${view_cmd} ${arq_svg}"
