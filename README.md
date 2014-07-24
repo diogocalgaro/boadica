@@ -1,7 +1,8 @@
 boadica
 =======
 
-Script em Bash para cache e consultas a uma categoria do Boadica.
+
+Script em Bash para cache e consultas a uma categoria do site Boadica.
 
 
 =====
@@ -15,12 +16,7 @@ $ git clone "https://github.com/diogocalgaro/boadica.git"
 =====
 
 
-Requisitos:
-
-whiptail 0.52.x
-sqlite 3.6.x
-bash 4.1.x
-
+Requisitos: whiptail 0.52.x, sqlite 3.6.x, bash 4.1.x
 Testado no: Fedora 20, Ubuntu 14.04, CentOS 7.
 
 
