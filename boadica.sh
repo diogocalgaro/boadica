@@ -29,6 +29,7 @@ eval "$(resize|head -n2|sed 's/^/export /g'|tr -d '\n')"
 if [ ${COLUMNS:-30} -le 30 -o ${LINES:-12} -le 12 ]
 then
 	echo "O terminal não atende ao tamanho mínimo de 30x12."
+	echo "Tamanho atual ${COLUMNS}x${LINES}"
 	exit 1
 fi
 
