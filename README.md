@@ -16,8 +16,15 @@ $ git clone "https://github.com/diogocalgaro/boadica.git"
 =====
 
 
-Requisitos: whiptail 0.52.x, sqlite 3.6.x, bash 4.1.x.
-Testado no: Fedora 20, Ubuntu 14.04, CentOS 7.
+Requisitos:
+ whiptail 0.52.x
+ sqlite 3.6.x
+ bash 4.1.x
+
+Testado no:
+ Fedora 20
+ Ubuntu 14.04
+ CentOS 7
 
 
 =====
