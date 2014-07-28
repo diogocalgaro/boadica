@@ -2,7 +2,7 @@ boadica
 =======
 
 
-Script em Bash para cache e consultas a uma categoria do site Boadica.
+Script em Bash para cache e consultas a uma categoria do site do Boa Dica.
 
 
 =====
