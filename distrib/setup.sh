@@ -32,6 +32,13 @@ then
 	fatal "Dependência não encontrada: whiptail"
 fi
 
+#resize
+which resize > /dev/null 2>&1
+if [ $? -ne 0 ]
+then
+	fatal "Dependência não encontrada: resize (pacote xterm)"
+fi
+
 #gzip
 which gzip > /dev/null 2>&1
 if [ $? -ne 0 ]
