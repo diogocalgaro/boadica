@@ -5,7 +5,7 @@ naveg_opcoes="google-chrome firefox opera konqueror epiphany midori" #ordem de p
 view_opcoes="inkview ristretto eog gwenview mate-image-viewer feh mirage viewnior xloadimage gimp inkscape"
 
 #itens fixos - nao alterar
-versao="v0.52"
+versao="v0.53"
 base="$(dirname $0)"
 dbname="dados.sqlite3"
 db="$base/$dbname"

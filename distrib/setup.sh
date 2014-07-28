@@ -184,7 +184,7 @@ then
 	#perguntando a categoria
 	while [ -z "${url_dados}" -o "${url_dados}" == "C" ]
 	do
-		eval "url_dados=\$(whiptail --nocancel --notags --title 'Setup' --menu 'Selecione a categoria que deseja utilizar' 50 100 38 $(cat $arq3 | tr -d '\n') 3>&2 2>&1 1>&3)"
+		eval "url_dados=\$(whiptail --nocancel --notags --title 'Setup' --menu 'Selecione a categoria que deseja utilizar' 40 100 28 $(cat $arq3 | tr -d '\n') 3>&2 2>&1 1>&3)"
 	done
 
 	#obtendo o nome da categoria

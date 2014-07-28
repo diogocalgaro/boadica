@@ -104,7 +104,8 @@ do
 			noreg=0
 			cont2=$(echo $cont | tr -d '\r\n' | cut -d'>' -f2-)
 			cont2=${cont2/'</td'}
-			localizacao="${cont2/'<br/>'/ - }"
+			localizacao="${cont2/'<br/>'/' - '}"
+			localizacao="${localizacao/'>'}"
 			idlocal=$(grep -hm1 "${localizacao}" "$arq3" | cut -d';' -f1) #procurando o ID do LOCAL no arquivo de cache
 
 			if [ -z "$idlocal" ] #novo local
@@ -190,7 +191,7 @@ done | whiptail --title "Carga de Dados" --gauge "Carregando dados de hoje" 7 50
 echo "commit;" >> "$sql"
 
 #gravando no banco de dados
-echo "Salvando no banco de dados"
+echo "Salvando no banco de dados..."
 fav=$(sqlite3 -csv "$db" "select id from produtos where favorito='S' order by 1;" | tr '\n' ',') #guardando os favoritos pra recupera-los depois da carga dos novos dados
 fav="${fav}000"
 sqlite3 -batch "$db" < "$sql"

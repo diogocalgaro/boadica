@@ -181,7 +181,7 @@ do
 			if [ -n "$cod" ]
 			then
 				naveg_cmd="$(which $naveg_opcoes xdg-open 2>/dev/null | head -n1)"
-				$naveg_cmd "${pag_vendedor}${cod}" 2>&1 >/dev/null &
+				$naveg_cmd "${pag_vendedor}${cod}" >/dev/null 2>&1 &
 			fi
 		fi
 	elif [ "$op" == "E" ]
