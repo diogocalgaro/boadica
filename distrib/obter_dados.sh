@@ -104,8 +104,8 @@ do
 			noreg=0
 			cont2=$(echo $cont | tr -d '\r\n' | cut -d'>' -f2-)
 			cont2=${cont2/'</td'}
-			localizacao="${cont2/'<br/>'/' - '}"
-			localizacao="${localizacao/'>'}"
+			localizacao="${cont2/'<br/>'/ - }" #nao pode colocar aspas simples no segundo parametro - fedora
+			localizacao="${localizacao/'>'}" #o delimitador acabou sendo incluido no cut acima - ubuntu
 			idlocal=$(grep -hm1 "${localizacao}" "$arq3" | cut -d';' -f1) #procurando o ID do LOCAL no arquivo de cache
 
 			if [ -z "$idlocal" ] #novo local
