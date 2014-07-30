@@ -111,12 +111,6 @@ from tb_precos_ultimo_valor r
 inner join produtos p on (p.id = r.produto)
 inner join tb_lojas l on (l.id = r.loja)
 order by 2, 1;
-CREATE VIEW "vw_buscar_item_ultimo_preco" AS
-select p.id, p.fabricante||' - '||p.nome||'   ['||l.nome||', R\$'||r.valor||', '||r.data||']' as descricao, p.nome as produto
-from tb_precos_ultimo_valor r
-inner join produtos p on (p.id = r.produto)
-inner join tb_lojas l on (l.id = r.loja)
-order by 2, 1;
 CREATE VIEW "vw_buscar_por_loja" AS
 select p.fabricante as "Fabricante", p.nome as "Item", r.valor as "Preço", l.nome as "Loja", r.data as "Data"
 from produtos p
@@ -166,6 +160,20 @@ from (
 inner join produtos p on (p.id = r2.produto)
 inner join tb_lojas l on (l.id = r2.loja)
 order by 4, 2, 1, 3;
+CREATE VIEW "vw_buscar_item_ultimo_preco" AS
+select p.id as "Id", p.fabricante as "Fabricante", p.nome as "Produto",
+l.nome as "Loja", r.valor_str as "Preco", r.valor_num as "Numero", max(r.data) as "Data"
+from produtos p
+inner join precos r on (r.produto = p.id)
+inner join lojas l on (l.id = r.loja)
+inner join locais o on (o.id = l.local)
+where o.consultar = 'S' 
+group by 1,2, 3, 4
+order by p.id, l.nome, r.data desc;
+CREATE VIEW "vw_buscar_item_ultimo_preco_2col" AS
+select id, substr(fabricante||'               ',1,15)||'  '||substr(produto||'                                      ',1,38)||'  '||substr(loja||'                  ',1,18)||'  '||substr('      '||replace(preco,',','.'),-6,6)||'  '||strftime('%d/%m',data) as descricao, produto
+from vw_buscar_item_ultimo_preco
+order by id, numero;
 INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');
 INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '1.00');
 INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');

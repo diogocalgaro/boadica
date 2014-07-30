@@ -145,8 +145,8 @@ do
 				   preco=${preco//' '}
 				   preco=${preco/'</td'}
 				   preco=${preco/./}
-				   precof="$(printf '%.2f' $preco)"
-				   preco=${preco/,/.} ;;
+				   precof="$(printf '%.2f' $preco)" #1,11 1,10 1,00 (valor_str)
+				   preco=${preco/,/.} ;;            #1.11 1.1  1    (valor_num)
 
 				6) loja="$(echo $cont2 | cut -d'>' -f2 | cut -d'<' -f1)"
 				   p=$(echo $cont2 | grep -b -o -m1 'codigo=' | head -n1 | cut -d':' -f1)
@@ -214,4 +214,4 @@ fi
 rm "$arq"
 rm "$arq2"
 rm "$arq3"
-rm "$sql"
+echo "$sql"

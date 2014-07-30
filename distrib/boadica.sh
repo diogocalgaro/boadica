@@ -102,7 +102,7 @@ do
 		if [ $? -eq 0 -a -n "$p" ]
 		then
 			cod=""
-			i=$(sqlite3 -csv $db "select id, substr(descricao,1,$col_jan_gr) from vw_buscar_item_ultimo_preco where produto like '%${p}%';" | tr '\n' ' ' | tr ',' ' ')
+			i=$(sqlite3 -csv $db "select id, descricao from vw_buscar_item_ultimo_preco_2col where produto like '%${p}%';" | tr '\n' ' ' | tr ',' ' ')
 			i="${i} ' ' ' ' Voltar =============================="
 
 			while [ "$cod" != "Voltar" ]
