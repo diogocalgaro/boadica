@@ -214,4 +214,4 @@ fi
 rm "$arq"
 rm "$arq2"
 rm "$arq3"
-echo "$sql"
+rm "$sql"
