@@ -15,42 +15,42 @@
 			<polygon points="25,5 35,25 15,25" stroke="black" />
 
 			<!-- dados -->
-			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">Naughty Dog - The Last of Us - Ed. Nacional</text>
+			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">Naughty Dog - The Last of Us</text>
 			<circle cx="25" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="25" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="20" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">17/07</text>
-			<circle cx="75" cy="220" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="75" y="215" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">85</text>
-			<text x="70" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">18/07</text>
+			<text x="20" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">22/07</text>
+			<circle cx="75" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="75" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
+			<text x="70" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">23/07</text>
 			<circle cx="125" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="125" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="120" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">21/07</text>
+			<text x="120" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">24/07</text>
 			<circle cx="175" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="175" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="170" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">22/07</text>
+			<text x="170" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">25/07</text>
 			<circle cx="225" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="225" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="220" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">23/07</text>
+			<text x="220" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">28/07</text>
 			<circle cx="275" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="275" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="270" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">24/07</text>
-			<circle cx="325" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="325" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="320" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">25/07</text>
-			<circle cx="375" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="375" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="370" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">28/07</text>
+			<text x="270" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">29/07</text>
+			<circle cx="325" cy="220" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="325" y="215" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">85</text>
+			<text x="320" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">30/07</text>
+			<circle cx="375" cy="220" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="375" y="215" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">85</text>
+			<text x="370" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">31/07</text>
 			<circle cx="425" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="425" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="420" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">29/07</text>
+			<text x="420" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">01/08</text>
 			<circle cx="475" cy="217" r="4" fill="black" stroke="none" stroke-width="0" />
 			<text x="475" y="212" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">86</text>
-			<text x="470" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">30/07</text>
+			<text x="470" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">04/08</text>
 		</g>
 	</defs>
 
 	<!-- grafico -->
-	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,217 75,220 125,217 175,217 225,217 275,217 325,217 375,217 425,217 475,217 475,475 25,475" />
+	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,217 75,217 125,217 175,217 225,217 275,217 325,220 375,220 425,217 475,217 475,475 25,475" />
 
 	<!-- desenhando elementos salvos para ficar no topo -->
 	<use xlink:href="#antes" />
