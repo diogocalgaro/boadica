@@ -7,16 +7,16 @@ source config.inc
 if [ -f "$db" ]
 then
 	#dump da estrutura de desenvolvimento
-        sqlite3 "$db" .dump | grep -v '^INSERT INTO' | grep -v '^COMMIT' > "${base}/${dump}"
+        sqlite3 "$db" .dump | grep -v '^INSERT INTO' | grep -v '^COMMIT' > "${dump}"
 
 	#inserindo dados padrao
-	echo "INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');" >> "${base}/${dump}"
-	echo "INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '1.00');" >> "${base}/${dump}"
-	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');" >> "${base}/${dump}"
-	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_max', '100');" >> "${base}/${dump}"
-	echo "COMMIT;" >> "${base}/${dump}"
+	echo "INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');" >> "${dump}"
+	echo "INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '1.00');" >> "${dump}"
+	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');" >> "${dump}"
+	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_max', '100');" >> "${dump}"
+	echo "COMMIT;" >> "${dump}"
 
-        echo "Estrutura da base de dados recuperada com sucesso em ${base}/${dump}"
+        echo "Estrutura da base de dados recuperada com sucesso em ${dump}"
 fi
 
 #apagando arquivos antigos

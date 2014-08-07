@@ -17,6 +17,7 @@ function fatal {
 	exit 1
 }
 
+
 # VERIFICANDO DEPENDENCIAS ####################################################
 
 #bash
@@ -61,6 +62,35 @@ then
         fatal "Sqlite3 abaixo da versão mínima: 3.6.x\nVersão atual: $(sqlite3 -version)"
 fi
 
+#downloader
+dw="$(which $dw_opcoes 2>/dev/null | head -n1)"
+if [ -n "$dw" ]
+then
+	dw="$(basename $dw)"
+else
+	fatal "Nenhum programa de download disponível..."
+fi
+
+
+# DIRETORIO DE TRABALHO PARA DOWNLOADS #########################################
+if [ ! -d "${workdir}" ]
+then
+	mkdir "${workdir}"
+	if [ $? -ne 0 ]
+	then
+		fatal "Falha ao criar o diretório de trabalho: ${workdir}"
+	fi
+fi
+perm="$(stat --printf=%a ${workdir})"
+if [ "${perm}" -lt 700 ]
+then
+	chmod u+rwx ${workdir}
+	if [ $? -ne 0 ]
+	then
+		fatal "Falha ao definir permissões do diretório de trabalho..."
+	fi
+fi
+
 
 # BASE DE DADOS ################################################################
 
@@ -75,11 +105,11 @@ then
 	fi
 
 	#verificando sqls de criacao da base
-	if [ -f "$base/$dump" ]
+	if [ -f "$dump" ]
 	then
 		#criando nova base de dados
 		rm "$db" 2> /dev/null
-		sqlite3 -bail "$db" ".read ${base}/${dump}"
+		sqlite3 -bail "$db" ".read ${dump}"
 
 		if [ $? -eq 0 ]
 		then
@@ -114,79 +144,62 @@ then
 
 	#baixando a pagina
 	echo "Obtendo página inicial da pesquisa de preços..."
-
-        which curl > /dev/null 2>&1
-        if [ $? -eq 0 ]
-        then
-                curl --compressed -s -o "$arq" "$url_base"
-        else
-                which aria2c > /dev/null 2>&1
-                if [ $? -eq 0 ]
-                then
-                        aria2c -q -o "$arq" "$url_base"
-                else
-                        which wget > /dev/null 2>&1
-                        if [ $? -eq 0 ]
-                        then
-                                wget -q -O "$arq" --no-use-server-timestamps "$url_base"
-                        else
-                                fatal "Nenhum programa de download disponível..."
-                        fi
-                fi
-        fi
-
+	case "$dw" in
+		"curl") curl --compressed -s -o "$arq" "$url_base" ;;
+		"aria2c")
+			dn="$(dirname $arq)"
+			bn="$(basename $arq)"
+			aria2c --auto-file-renaming=false --allow-overwrite=true -q -o "$bn" -d "$dn" "$url_base" ;;
+		"wget") wget -q -O "$arq" --no-use-server-timestamps "$url_base" ;;
+	esac
 	if [ ! -s "$arq" ]
 	then
-		fatal "Não conseguiu baixar o arquivo: ${url_base}"
+		fatal "Não conseguiu baixar o arquivo: ${url_base} em ${arq}"
 	fi
 
 	#parseando a pagina
-	linha1=$(grep -nw -m1 '<div class="menu-dropdown-topo">' "$arq" | cut -d':' -f1)
-	linha2=$(grep -nw -m1 '<li><a href="/iniciodrivers.asp">Drivers</a></li>' "$arq" | cut -d':' -f1)
-	dif="$((linha2 - linha1))"
-	head -n${linha2} "$arq" | tail -n${dif} | iconv -f "ISO-8859-1" -t "UTF-8" | sed 's/^[ \t]*//' > "$arq2"
-	num_linhas="$(wc -l $arq2 | awk '{ print $1 }')"
+	linha1=$(grep -nw -m1 '<div class="menu-dropdown-topo">' "$arq")
+	linha1=${linha1%%:*}
+	linha2=$(grep -nw -m1 '<li><a href="/iniciodrivers.asp">Drivers</a></li>' "$arq")
+	linha2=${linha2%%:*}
+	dif=$((linha2 - linha1))
+	head -n${linha2} "$arq" | tail -n${dif} | grep '/pesquisa/' | iconv -f "ISO-8859-1" -t "UTF-8" | sed 's/^[ \t]*//' > "$arq2"
+	num_linhas=$(cat $arq2 | wc -l)
 
 	#montando as opcoes pro menu
+	echo "Montando o menu de opções..."
 	while read i
 	do
-		echo "$i" | grep '/pesquisa/' 2>&1 >/dev/null
-		if [ $? -eq 0 ]
+		linha="${i%$'\r\n'*}"
+		linha="${linha#"${linha%%[![:space:]]*}"}"
+		linha="${linha/<li><a href=}"
+		tipo=""
+
+		if [ "${linha: -6:5}" == '</li>'  ] #tem q ter espaco entre o 'dois pontos' e o  'menos 6', fica sobrando um caracter entre o '>' e o 'fim de linha'
 		then
-			linha="$(echo "$i" | tr -d '\r\n')"
-			linha="$(echo "$linha" | sed 's/^ *//;s/ *$//;s/<li><a href=//')"
-			tipo=""
-
-			echo "$i" | grep '</li>' 2>&1 >/dev/null
-			if [ $? -eq 1 ]
-			then
-				tipo="c"
-			else
-				tipo="s"
-			fi
-
-			linha="$(echo "$linha" | sed 's,</a>,,;s,</li>,,;s/\"$//;s/\" ou/ ou/;s/$/\"/')"
-
-			if [ "$tipo" == "c" ]
-			then
-				linha="$(echo "$linha" | sed 's/>/\|\"┣━━━━━━━━━━/')"
-				cod='"C"'
-			else
-				linha="$(echo "$linha" | sed 's/>/\|\"┣/')"
-				cod="$(echo "$linha" | cut -d'|' -f1)"
-			fi
-
-			desc="$(echo "$linha" | cut -d'|' -f2)"
-			echo "$cod $desc " >> "$arq3"
+			tipo="s"
+		else
+			tipo="c"
 		fi
 
-		#barra de progresso
-		(( x++ ))
-		perc=$(echo "scale=2;${x}/${num_linhas}*100" | bc)
-		perc=$(echo "${perc}/1" | bc)
-		echo $perc
+		linha=${linha%</a>*}
+		linha=${linha%\"} #sem aspas em volta
+		linha=${linha/\" ou/ ou}
+		linha=${linha}'"'
 
-	done < "$arq2" | whiptail --title "Setup" --gauge "Montando o menu de opções" 7 50 0
+		if [ "$tipo" == "c" ]
+		then
+			linha=${linha/>/\|\"┣━━━━━━━━━━}
+			cod='"C"'
+		else
+			linha=${linha/>/\|\"┣}
+			cod=${linha%\|*}
+		fi
+
+		desc=${linha#*\|}
+		echo "$cod $desc " >> "$arq3"
+
+	done < "$arq2"
 
 	#perguntando a categoria
 	while [ -z "${url_dados}" -o "${url_dados}" == "C" ]

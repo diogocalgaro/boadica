@@ -1,0 +1,1601 @@
+<ul class="dropdown">
+<li><a href="/pesquisa/precos">Pesquisa de Preços</a>
+<ul class="sub_menu">
+<li><a href="#">Computador</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/pc">PC - Micros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=3">Celeron</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2170">Pentium Dual Core</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=1936">Core 2 Duo</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2169">Core 2 Quad</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2701">Core i3</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2610">Core i5</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2370">Core i7</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=5&XF=2716">Atom</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=7">AOC</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=66">Apple</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=101">Bematech</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=2008">CCE</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=407">Dell</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=20">HP</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=22">Intel</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=1785">Lenovo/IBM</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XF=1799">Positivo</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=7">AMD Sempron</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=8">AMD Athlon X2</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=9">AMD Phenom</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=10">AMD FX</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=11">AMD Fusion</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=5&XK=9">All in One</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=1&CodCategoriaX=1&XT=20">Mini PC</a></li>
+<li><a href="/pesquisa/pc/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=10">Thin Client</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/compu%5Fnotebook">Notebook / Netbook / Ultrabook</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=5">Com CPU Intel Atom/Atom Dual Core</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=1">Com CPU Intel Celeron/Celeron Dual Core</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=3">Com CPU Intel Core 2 Duo</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=2">Com CPU Intel Dual Core</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=6&XJ=3">Com CPU Intel i3</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=6&XJ=5">Com CPU Intel i5</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2&XE=6&XJ=7">Com CPU Intel i7</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=4&XE=8">Com CPU AMD Fusion</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=4&XE=2">Com CPU AMD Turion</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2">Todos</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=4">Todos com CPU AMD</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XT=2">Todos com CPU Intel</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XG=9">Notebooks Conversíveis em Tablet</a></li>
+<li><a href="/pesquisa/tablets%5Fipads">iPads / Tablets</a>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=1">Netbook</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=2">Acer</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=520">Acer/Gateway</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=66">Apple</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=8">ASUS</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=2008">CCE</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=11">Compaq</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=407">DELL</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=20">HP/Compaq</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=1785">Lenovo</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=26">LG</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=1853">Philco-Itautec</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=48">Sony</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XF=51">Toshiba</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=8">Com tela menor que 10"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=1">Com tela de 10" ou 11"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=2">Com tela de 12"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=3">Com tela de 13"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=4">Com tela de 14"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=5">Com tela de 15"</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=1&CodCategoriaX=2&XK=7">Com tela de 16" ou maior</a></li>
+<li><a href="/pesquisa/carregadores">Carregadores e Baterias</a>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=3">Coolers e Bases</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=2">Luminárias</a></li>
+<li><a href="/pesquisa/note%5Fcases">Maletas, cases e mochilas</a>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=6">Teclados</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=5">Telas LCD</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=4">Travas e Cadeados</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=0">Outros Acessórios e Peças</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=15&CodCategoriaX=4&XK=2">HDs SATA</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=15&CodCategoriaX=4&XK=3">HDs ZIF</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=15&CodCategoriaX=7">HDs Externos</a></li>
+<li><a href="/pesquisa/multi%5Fpenmp3">PenDrive USB</a>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=15&CodCategoriaX=6">SSD - Solid State Drives</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=2">Rede Wireless PCMCIA (sem fio)</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=1">Memória p/ Notebook até 256 MB</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=2">Memória p/ Notebook 512 MB</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=3">Memória p/ Notebook 1 GB</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=4">Memória p/ Notebook 2 GB ou maior</a></li>
+<li><a href="/pesquisa/compu_notebook/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1">Memória p/ Notebook - Todas</a></li>
+<li><a href="/pesquisa/compu%5Fpalm">GPS / Calculadoras</a>
+</ul>
+</li>
+<li><a href="/pesquisa/compu%5Fservidor">Servidores</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XT=3">Opteron</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XT=2">Xeon</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XF=61">IBM</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XF=20">HP</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XF=986">Supermicro</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4">Todos</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XT=9">Acessórios</a></li>
+<li><a href="/pesquisa/compu_servidor/precos?ClasseProdutoX=1&CodCategoriaX=4&XT=10">Firewall</a></li>
+<li><a href="/pesquisa/cpu%5Fvent">Coolers</a>
+<li><a href="/pesquisa/out%5Fgabi">Gabinetes e Racks</a>
+<li><a href="/pesquisa/out%5Ffonte">Fontes</a>
+</ul>
+</li>
+<li><a href="/pesquisa/compu%5Fpalm">GPS e Calculadoras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=9&XE=0">GPS</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=9&XE=1">Acessórios p/ GPS</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=1&CodCategoriaX=3&XT=2">Calculadoras</a></li>
+<li><a href="/pesquisa/compu%5Fcelular">Celulares, Smartphones, MP7 e Rádios (Nextel)</a>
+<li><a href="/pesquisa/tablets%5Fipads">iPads / Tablets</a>
+<li><a href="/pesquisa/carregadores">Carregadores e pilhas</a>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores de memórias</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=6&CodCategoriaX=35">Periféricos e Acessórios p/ Palm</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=1">Memórias - CF - Compact Flash</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=2">Memórias - MMC - Mult Media Card</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=3">Memórias - MS - Memory Stick</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=0">Memórias - SD - Secure Digital</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=3">Memórias - Micro SD</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=2">Memórias - Mini SD</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=5">Memórias - XD</a></li>
+<li><a href="/pesquisa/compu_palm/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3">Memórias - Todas</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/compu%5Fcelular">Celular / Smartphone / Rádio</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6">Celulares, Smartphones, MP7 e Rádios (Nextel)</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XJ=1">Celulares com Sistema Android</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XJ=2">Celulares com Sistema Windows</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XK=2">Celulares para 2 chips</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XK=3">Celulares para 3 chips</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XK=4">Celulares para 4 chips</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=7&XT=0">Acessórios p/ Celulares e Rádios</a></li>
+<li><a href="/pesquisa/carregadores">Baterias e Carregadores</a>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XG=2">Celular Fixo ou Rural</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XG=1">Fones e Headsets Bluetooth</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=7&XT=1">Peças p/ Celulares</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3">Cabos USB</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3&XE=2">Cabos USB específicos p/ Celulares</a></li>
+<li><a href="/pesquisa/compu%5Fpalm">Palmtops</a>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=9">GPS</a></li>
+<li><a href="/pesquisa/tablets%5Fipads">iPads / Tablets</a>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=66">Apple</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=1708">Bak</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=2015">BlackBerry</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=26">LG</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=32">Motorola</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=771">Nokia</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=1550">Powerpack</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=6&XF=48">Sony</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=1">Memórias - CF - Compact Flash</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=2">Memórias - MMC - Mult Media Card</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=3">Memórias - MS - Memory Stick</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=0">Memórias - SD - Secure Digital</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=1">Memórias - Micro SD/SDHC</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=2">Memórias - Mini SD</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=5">Memórias - XD</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3">Memórias - Todas</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores de memórias</a></li>
+<li><a href="/pesquisa/compu_celular/precos?ClasseProdutoX=1&CodCategoriaX=7&XT=4">Chips e Cartões Telefônicos</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/tablets%5Fipads">Tablets/iPads</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0">Tablets - Todos</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XF=66">iPads</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XJ=1">Tablets com sistema Android</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XG=1">Tablets até 8 polegadas</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XG=2">Tablets de 9 polegadas</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XG=3">Tablets de 10 polegadas</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XK=1">Tablets c/ memória até 8GB</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XK=2">Tablets c/ memória de 16GB</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XK=3">Tablets c/ memória de 32GB</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=0&XK=4">Tablets c/ memória de 64GB ou mais</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=2">Acer</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=66">Apple</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=8">Asus</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=407">Dell</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=3139">Genesis</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=20">HP</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=1738">Orange</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=1550">Powerpack</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XF=48">Sony</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=1&CodCategoriaX=8&XT=2">Acessórios p/ iPad</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=3&CodCategoriaX=3&XK=77">Acessórios específicos para Tablets</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=11&CodCategoriaX=39&xt=2">Cases, capas e películas p/ Tablets e iPads</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=6&CodCategoriaX=33&XK=1">Teclados Bluetooth</a></li>
+<li><a href="/pesquisa/tablets_ipads/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=8">Peças para Tablets</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">CPU e memória</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu%5Fplmae">Placas Mãe</a>
+<ul class="sub_menu">
+<li><a href="#">Placa Mãe P/ AMD</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=0">P/ AMD soquete 754</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=9">P/ AMD soquete 939/940</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=4">P/ AMD soquete AM1</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=2&XG=0&XJ=0">P/ AMD soquete AM2</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=2&XG=2&XJ=0">P/ AMD soquete AM2+</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=2&XG=3">P/ AMD soquete AM3</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=2&XE=2&XG=3&XJ=3">P/ AMD soquete AM3+</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=3&XE=0">P/ AMD soquete FM1</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XT=3&XE=1">P/ AMD soquete FM2</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XK=1">C/ processador AMD integrado de fábrica</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=127">Abit p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=8">Asus p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=1282">Asrock p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=97">Biostar p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=454">ECS p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=1450">Foxconn p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=532">Gigabyte p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=710">Microstar (MSI) p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=819">PcChip p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=2209">PcWare p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=1808">Phitronics p/ AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=2211">VS Company p/AMD</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=13&XF=2144">Zotac</a></li>
+</ul>
+<li><a href="#">Placa Mãe P/ Intel</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XT=7">P/ Xeon</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XT=3">P/ Core i7 e i5</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XT=4&XG=7">P/ Core2, Dual Core, Pentium 4 e Celeron soquete LGA775</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XG=11">P/ Core i5/Core i7/Xeon soquete LGA 1156</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XG=14">P/ Core i7 soquete LGA 1150</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XG=12">P/ Core i7 soquete LGA 1155</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XG=13">P/ Core i7 soquete LGA 1366</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XG=20">P/ Core i7 soquete LGA 2011</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XK=1">C/ processador Intel integrado de fábrica</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=127">Abit p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=1282">Asrock p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=8">Asus p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=97">Biostar p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=98">Digitron</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=454">ECS p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=1425">EVGA p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=1450">Foxconn p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=532">Gigabyte p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=22">Intel p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=710">Microstar (MSI) p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=819">PcChip p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=2209">PCWare p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=1808">Phitronics p/ Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=986">SuperMicro</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=2211">VS Company p/Intel</a></li>
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=26&XF=2144">Zotac</a></li>
+<li><a href="/pesquisa/cpu%5Fvent">Coolers</a>
+<li><a href="/pesquisa/mem%5Fcpu">Memórias</a>
+<li><a href="/pesquisa/cpu%5Fproc">Processadores</a>
+</ul>
+<li><a href="#">Placa Mãe P/ VIA</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_plmae/precos?ClasseProdutoX=5&CodCategoriaX=39">Placas com ou sem CPU VIA</a></li>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/cpu%5Fproc">Processadores</a>
+<ul class="sub_menu">
+<li><a href="#">Processadores Intel</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=1">Celeron</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=8">Pentium Dual Core</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=7">Duo core</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=9">Quad core</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=1">Core i3</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=1&XG=14">Core i3 soquete LGA 1150</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=1&XG=12">Core i3 soquete LGA 1155</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=1&XG=11">Core i3 soquete LGA 1156</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=3">Core i5 (todos)</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=3&XG=14">Core i5 soquete LGA 1150</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=3&XG=12">Core i5 soquete LGA 1155</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=3&XG=11">Core i5 soquete LGA 1156</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4">Core i7 (todos)</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4&XG=14">Core i7 soquete LGA 1150</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4&XG=12">Core i7 soquete LGA 1155</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4&XG=11">Core i7 soquete LGA 1156</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4&XG=13">Core i7 soquete LGA 1366</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=4&XG=20">Core i7 soquete LGA 2011</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=4&XE=2">Xeon</a></li>
+</ul>
+<li><a href="#">Processadores AMD</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=5&XE=2">AMD Sempron soquete 462/754</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=5&XE=3">AMD Sempron soquete AM2/939/940</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=5">AMD Sempron - Todos</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=8">AMD Athlon 64 - Todos</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=8&XE=11&XJ=1">AMD Athlon II - Todos</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=9">AMD Phenom - Todos</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=7">AMD Opteron</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=10">AMD Fusion</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=11">AMD FX</a></li>
+<li><a href="/pesquisa/cpu_proc/precos?ClasseProdutoX=5&CodCategoriaX=27&XT=12">AMD soquete AM1</a></li>
+<li><a href="/pesquisa/cpu%5Fvent">Coolers</a>
+<li><a href="/pesquisa/mem%5Fcpu">Memórias</a>
+<li><a href="/pesquisa/cpu%5Fplmae">Placas Mãe</a>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/cpu%5Fvent">Cooler (ventoinha)</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=1">P/ K6, K6 II, Pentium I, Slot I e Slot A</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XE=1">P/ XP, Duron, Sempron, P III (Soq A / 462 / 370)</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XG=1">P/ Athlon64 e Sempron64 (Soq 754)</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XJ=1">P/ Athlon64, Sempron64, Opteron e Phenom (Soq 939 / 940 / AM2 / AM3)</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XE=2">P/ Pentium e Celeron (Soq 423 / 478)</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XK=1">P/ Pentium e Celeron (Soq LGA775 / 1156 / 1366/ 2011)</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=0&XK=2">P/ Xeon</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=1">Para Gabinetes e Ventiladores</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=3">Para HDs</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=4">Para Chipsets e Vídeo</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=6">Para memórias</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=2">Neons e acessórios</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=5">Pastas térmicas e outros</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=7">Controladores de Cooler</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XK=8">Water Cooler</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=3&CodCategoriaX=3&XT=3">Coolers e Bases para notebooks</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1256">Akasa</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1199">AVC</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1171">CoolerMaster</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1281">Evercool</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1920">Extream</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=96">Mtek</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1162">Thermaltake</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1318">Vcom</a></li>
+<li><a href="/pesquisa/cpu_vent/precos?ClasseProdutoX=5&CodCategoriaX=28&XF=1310">Zalman</a></li>
+<li><a href="/pesquisa/mem%5Fcpu">Memórias</a>
+<li><a href="/pesquisa/cpu%5Fplmae">Placas mãe</a>
+<li><a href="/pesquisa/cpu%5Fproc">Processadores</a>
+</ul>
+</li>
+<li><a href="/pesquisa/mem%5Fcpu">Memórias</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=7">DDR (Todas) até 512 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=8">DDR (Todas) 1 ou 2 GB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=9">DDR (Todas) 4 GB ou acima</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=7&XG=0&XK=0">DDR1 de até 512</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=8&XG=0&XK=0">DDR1 de 1 ou 2 GB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=9&XG=0&XK=0">DDR1 de 4 GB ou maior</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=7&XG=5">DDR2 até 512 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=8&XG=5">DDR2 1 ou 2 GB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=9&XG=5">DDR2 4 GB ou maior</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XK=6">DDR2 667 (PC5400)</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XK=8">DDR2 800 (PC6400)</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=7&XK=9">DDR3 até 512 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=8&XK=9">DDR3 1 ou 2 GB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=9&XK=9">DDR3 4 GB ou maior</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=1818">G-Skill</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=61">IBM</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=624">Kingston</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=1204">Markvision</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=702">Micron</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=1341">OCZ</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=2004">Patriot</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/multi%5Fpenmp3">Pen Drives e MP3</a>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=2">SDRAM até 64 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=4">SDRAM 128 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=5">SDRAM 256 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=6">SDRAM 512 MB ou maior</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XE=11">PC100</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XE=33">PC133</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XT=1">SIMM - EDO/FPM</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=14&XJ=1">ECC</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=1">Para Notebook até 256 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=2">Para Notebook 512 MB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=3">Para Notebook 1 GB</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1&XE=4">Para Notebook 2 GB ou maior</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=15&XT=1">Para Notebook - Todas</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=1">Memórias - CF - Compact Flash</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=2">Memórias - MMC - Mult Media Card</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=3">Memórias - MS - Memory Stick</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=0">Memórias - SD - Secure Digital</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=1">Memórias - Micro SD/SDHC</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&XJ=2">Memórias - Mini SD</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=6">Memórias - SxS</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=5">Memórias - XD</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=6">Cooler P/ Memórias</a></li>
+<li><a href="/pesquisa/mem_cpu/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores e adaptadores de cartões de memórias</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fpenmp3">Pen drives</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=0">Pen Drive USB até 2 Gb</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=0">Pen Drive USB de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=0">Pen Drive USB de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=5&XG=0">Pen Drive USB de 16 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=6&XG=0">Pen Drive USB  de 32 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=7&XG=0">Pen Drive USB  de 64 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=8&XG=0">Pen Drive USB  de 128 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=0">Pen Drive USB - Todos</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=0&XK=3">PenDrive USB 3.0</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=1">Pen Drive USB/MP3 player até 2 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=1">Pen Drive USB/MP3 de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=1">Pen Drive USB/MP3 de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=2">Pen Drive USB/MP4 player até 2 Gb</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=2&XG=2">Pen Drive USB/MP4 de 2 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=2">Pen Drive USB/MP4 de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=2">Pen Drive USB/MP4 de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=5&XG=2">Pen Drive USB/MP4 player de 16 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=6&XG=2">Pen Drive USB/MP4 player de 32 GB ou +</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=1">MP3 player - Todos</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=2">MP4 player - Todos</a></li>
+<li><a href="/pesquisa/compu%5Fcelular">Celulares, MP7, MP8, MP9, MP10...</a>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=66">iPod</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=66">Apple</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=624">Kingston</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=1204">Markvision</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=1431">Sandisk</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=48">Sony</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=3">Capas e acessórios</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=0">Cabos Firewire</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3">Cabos USB</a></li>
+<li><a href="/pesquisa/carregadores">Pilhas e carregadores</a>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores e adaptadores de cartões de memória</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Armazenamento</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm%5Fhd">Discos (HD)</a>
+<ul class="sub_menu">
+<li><a href="#">IDE/SATA/ZIF</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=1">IDE - Todos</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=3&XT=5">SATA até 450 GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=3&XT=6">SATA de 500 GB até 950 GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=3&XT=7">SATA de 1 TB ou mais</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=3&XG=3">SATA 3.0 (6 GB/s)</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=4">Para Notebook (Todos)</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=4&XK=2">Para Notebook - SATA</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=4&XK=3">Para Notebook - ZIF</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XT=1">HD Externo até 500 GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XT=2">HD Externo de 600 GB até 1 TB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XT=3">HD Externo acima de 1 TB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XE=1">HD Externo NAS</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XE=2">HD Externo USB 3.0</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XG=3">HD FireWire</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=7&XJ=1">HD Wireless - Wi-fi</a></li>
+</ul>
+<li><a href="#">SCSI</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=2&XT=3">Até 36.x GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=2&XT=4">Acima de 36.x GB</a></li>
+</ul>
+<li><a href="#">SAS</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=5">SAS (Todos)</a></li>
+</ul>
+<li><a href="#">SSD</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=6&XT=0">SSD - Solid State Drives até 200 GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=6&XT=2">SSD - Solid State Drives acima de 200 GB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=6">SSD - Solid State Drives (Todos)</a></li>
+</ul>
+<li><a href="#">Fabricantes</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&XF=555">Hitachi</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&XF=20">HP</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&XF=624">Kingston</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&CodCategoriaX=3&XF=46">Seagate</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=15&XF=58">Western Digital</a></li>
+</ul>
+<li><a href="#">Controladoras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=2">SAS</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=1">SCSI</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=3">USB</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4">Outras</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=4&CodCategoriaX=25&XF=3">Adaptec</a></li>
+</ul>
+<li><a href="#">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi%5Fpenmp3">Pen Drive USB</a>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=5">Cabos IDE</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=8">Cabos SATA</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=1">Cabos SCSI</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=3">Coolers para HDs</a></li>
+<li><a href="/pesquisa/arm_hd/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=2">Gaveta e Cases</a></li>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Fblue">Blu-Ray</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XE=1">Blu-ray (todos)</a></li>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XE=1&XG=0">Blu-ray (Internos)</a></li>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XE=1&XG=1">Blu-ray (Externos)</a></li>
+<li><a href="/pesquisa/arm%5Fmid">Midias</a>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XF=8">Asus</a></li>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XF=26">LG</a></li>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XF=84">Lite On</a></li>
+<li><a href="/pesquisa/arm_blue/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=4&XF=45">Samsung</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Fcdr">CD e CDRW</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_cdr/precos?ClasseProdutoX=4&CodCategoriaX=20&XT=1">CDRW</a></li>
+<li><a href="/pesquisa/arm_cdr/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=2">CDRW+DVD (Combo)</a></li>
+<li><a href="/pesquisa/arm_cdr/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=5">Duplicadores de CD/DVD</a></li>
+<li><a href="/pesquisa/arm%5Fmid">Mídias</a>
+<li><a href="/pesquisa/compu%5Fnotebook">P/ Notebooks</a>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Fdvd">DVD e DVDRW</a>
+<ul class="sub_menu">
+<li><a href="#">DVD</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=1">DVD</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=2">DVD + CDRW (Combo)</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XG=0">DVD-RW IDE(Gravador)</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XG=1">DVD-RW SATA(Gravador)</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3">DVD-RW Todos(Gravador)</a></li>
+<li><a href="/pesquisa/arm%5Fblue">Blu-Ray (Internos e Externos)</a>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=13">DVD-RW,e CD Externo</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=5">Duplicadores de CD/DVD</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=8">Asus</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=26">LG</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=84">Lite On</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=834">Pioneer</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=13&XF=840">Plextor</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=21&XT=3&XF=48">Sony</a></li>
+</ul>
+<li><a href="#">Mídia</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm%5Fmid">Mídias</a>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=1">Caixas e envelopes</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=2">Maletas, Cases, Porta CDs</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=5">Etiquetas p/ CDs/DVDs</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=4">Diversos</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=7&CodCategoriaX=8">DVD/CD Automotivo</a></li>
+<li><a href="/pesquisa/arm_dvd/precos?ClasseProdutoX=7&CodCategoriaX=7">DVD Portátil</a></li>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Frem">Drives</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_rem/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=1">Drive 1.44 Mb</a></li>
+<li><a href="/pesquisa/arm_rem/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=8">Peerless</a></li>
+<li><a href="/pesquisa/multi%5Fpenmp3">Pen Drives</a>
+<li><a href="/pesquisa/arm_rem/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=0&XE=4">Drives USB</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Ffitas">Unidades de Fitas</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=3">DAT DDS</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=9">AIT</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=4">DLT</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=8">LTO</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=7">SLR</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=5">Travan</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XT=6">Outros</a></li>
+<li><a href="/pesquisa/arm_fitas/precos?ClasseProdutoX=4&CodCategoriaX=23&XG=9">Fitas de limpeza</a></li>
+<li><a href="/pesquisa/arm%5Fmid">Mídias</a>
+</ul>
+</li>
+<li><a href="/pesquisa/arm%5Fmid">Mídias</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=2">CDR</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=3">CDRW</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XG=9">CDR e CDRW em quantidades</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=6">DVDR/DVDRW/DVDRAM</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XJ=2">Mini DVDR/DVDRW</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XG=8">DVDR e DVDRW em quantidades</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=1">Caixas e envelopes</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=2">Maletas, Cases, Porta CDs</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=5">Etiquetas</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=26&XT=4">Diversos</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=17">Blu-Ray</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=1&XE=1">1.44 MB</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=5">AIT</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=4">DAT DDS</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=13">DLT</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=24&XT=16">LTO</a></li>
+<li><a href="/pesquisa/arm_mid/precos?ClasseProdutoX=4&CodCategoriaX=23&XG=9">Fitas de Limpeza</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fcontro">Controladoras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4&XE=4">Firewire - IEEE 1394</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=2">SAS</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=1">SCSI</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=3">USB</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4">Outras</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XF=3">Adaptec</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XF=22">Intel</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Impressora</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres%5Fjato">Jato de Tinta</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XF=10">Canon</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XF=15">Epson</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XF=20">HP</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XF=25">Lexmark</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36">Todas</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XE=2">Impressoras Fotográficas</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=4">Sistema de Fluxo Contínuo de tintas</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1">Multifuncionais Jato de tinta</a></li>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Servidor de impressão</a></li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Cartuchos e outros suprimentos</a>
+<li><a href="/pesquisa/impres_jato/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=0">Copiadoras, Impressoras a cera, fontes, acessórios e outras impressoras</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/impres%5Flaser">Laser</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=296">Brother</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=15">Epson</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=20">HP</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=25">Lexmark</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=35">Okidata</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XF=59">Xerox</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37">Laser (Todas)</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=37&XT=0&XE=1">Laser Coloridas</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XK=2">Multifuncionais Laser Coloridas</a></li>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Servidor de Impressão</a></li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Toners e outros suprimentos</a>
+<li><a href="/pesquisa/impres_laser/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=0">Copiadoras, Impressoras a cera, fontes, acessórios e outras impressoras</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/impres%5Fmatricial">Matricial</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_matricial/precos?ClasseProdutoX=7&CodCategoriaX=38&XT=0&XF=15">Epson</a></li>
+<li><a href="/pesquisa/impres_matricial/precos?ClasseProdutoX=7&CodCategoriaX=38&XT=0&XF=35">Okidata</a></li>
+<li><a href="/pesquisa/impres_matricial/precos?ClasseProdutoX=7&CodCategoriaX=38&XT=0">Todas</a></li>
+<li><a href="/pesquisa/impres_matricial/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Servidor de Impressão</a></li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Fitas e outros suprimentos</a>
+<li><a href="/pesquisa/impres_matricial/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=0">Outras impressoras, fontes e acessórios</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/impres%5Fmultifuncional">Multifuncional</a>
+<ul class="sub_menu">
+<li><a href="#">Laser</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2">Multifuncionais Laser (todos)</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XK=2">Multifuncionais Laser Coloridas</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=296">Multifuncionais Laser Brother</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=15">Multifuncionais Laser Epson</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=20">Multifuncionais Laser HP</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=634">Multifuncionais Laser Kyocera</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=25">Multifuncionais Laser Lexmark</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=35">Multifuncionais Laser Okidata</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=45">Multifuncionais Laser Samsung</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=2&XF=59">Multifuncionais Laser Xerox</a></li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Toners e outros suprimentos</a>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Servidor de Impressão</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=0">Copiadoras, Impressoras a cera, fontes, acessórios e outras impressoras</a></li>
+</ul>
+<li><a href="#">Jato de Tinta</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1">Multifuncionais Jato de tinta (todos)</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1&XF=296">Multifuncionais Jato de tinta Brother</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1&XF=10">Multifuncionais Jato de tinta Canon</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1&XF=15">Multifuncionais Jato de tinta Epson</a></li>
+<li><a href="/pesquisa/impres_multifuncional/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=1&XE=1&XF=20">Multifuncionais Jato de tinta HP</a></li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Cartuchos e outros suprimentos</a>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/impres%5Fsuprimentos">Cartuchos, Toners e afins</a>
+<ul class="sub_menu">
+<li><a href="#">Cartuchos Originais</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=20">Cartuchos HP</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=296">Cartuchos Brother</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=10">Cartuchos Canon</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=1131">Cartuchos Elgin</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=15">Cartuchos Epson</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=24">Cartuchos Kodak</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=25">Cartuchos Lexmark</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=35">Cartuchos Okidata</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=1799">Cartuchos Positivo</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=2609">Cartuchos Primera</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XF=59">Cartuchos Xerox</a></li>
+</ul>
+<li><a href="#">Toner Original</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=20">Toner HP</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=296">Toner Brother</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=15">Toner Epson</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=634">Toner Kyocera</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=25">Toner Lexmark</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=35">Toner Okidata</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=812">Toner Panasonic</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=45">Toner Samsung</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XF=59">Toner Xerox</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=0">Toner Todas as Marcas</a></li>
+</ul>
+<li><a href="#">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=9">Acessórios</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=6">Cabeças de impressão</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=7">Cilindros</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=5">Fusores e kits de Manutenção</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=2">Fitas</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=5">Cartuchos recarregáveis e chips</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=3">Tintas e insumos p/ recarga</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=6">Tintas Sublimáticas</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Servidor de Impressão</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=4">Sistema de Fluxo Contínuo de tintas</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=2">Cabo Paralelo</a></li>
+</ul>
+<li><a href="#">Cartuchos Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9&XG=5">Não originais compatíveis p/ Brother</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9&XG=1">Não originais compatíveis p/ Canon</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9&XG=2">Não originais compatíveis p/ Epson</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9&XG=3">Não originais compatíveis p/ HP</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9&XG=4">Não originais compatíveis p/ Lexmark</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=9">Não originais compatíveis - Todos</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=1&XE=8">Cartuchos remanufaturados</a></li>
+</ul>
+<li><a href="#">Toner Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=5">Não originais compatíveis p/ Brother</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=3">Não originais compatíveis p/ HP</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=4">Não originais compatíveis p/ Lexmark</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=1">Não originais compatíveis p/ Panasonic</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=7">Não originais compatíveis p/ Samsung</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=6">Não originais compatíveis p/ Xerox</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9&XG=0">Não originais compatíveis - Outros</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=9">Não originais compatíveis - Todos</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=3&XE=8">Toners remanufaturados</a></li>
+</ul>
+<li><a href="#">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=8">Bastões de Cera</a></li>
+<li><a href="/pesquisa/impres_suprimentos/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=6">Ribbons</a></li>
+<li><a href="/pesquisa/papelaria">Papelaria</a>
+</ul>
+</ul>
+</li>
+<li><a href="/pesquisa/precos/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3&XE=0&XG=1">Impressoras Fiscais</a></li>
+<li><a href="/pesquisa/impres%5Foutras">Plotters, Térmicas e outras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=3&XF=15">Plotters Epson</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=3&XF=20">Plotters HP</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=3">Plotters - Todas</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3&XE=1">Impressoras de Cheques</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=4">Impressoras Sublimáticas</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3">Impressoras Térmicas</a></li>
+<li><a href="/pesquisa/impres_outras/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=0">Copiadoras, Impressoras a cera, Rotuladoras, fontes, acessórios e outras impressoras</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/papelaria">Papelaria</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=0">Papel Ofício, A4, A3...</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=4">Bobinas</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=5">Etiquetas</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=3">FAX</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=6">Formulário Contínuo</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=2">Papel Fotográfico</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=1">Papel Transfer</a></li>
+<li><a href="/pesquisa/papelaria/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=1&XE=1">Sublimático</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/sublimaticos">Sublimaticos</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/sublimaticos/precos?ClasseProdutoX=7&CodCategoriaX=40&XT=4">Impressoras Sublimáticas</a></li>
+<li><a href="/pesquisa/sublimaticos/precos?ClasseProdutoX=7&CodCategoriaX=1&XT=1&XE=1">Papeis Sublimáticos</a></li>
+<li><a href="/pesquisa/sublimaticos/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=6">Tintas Sublimáticas</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Multimídia</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi%5Fcaixas">Caixas de Som</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XT=1">Amplificadas</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XT=4&XE=2">Conjuntos 2.1( 2 Caixas + 1 SubWoofer )</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XT=4&XE=5">Conjuntos 5.1( 5 Caixas + 1 SubWoofer )/ Home Theater</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XT=4">Conjuntos ( Caixas + SubWoofer ) - Todos</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11">Todas</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=1">Headphones</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=2">Microfones</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=0">Headphones e microfones</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XG=1">Headset Bluetooth</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XF=12">Creative labs</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XF=1628">Edifier</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XF=18">Genius</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XF=27">Logitech</a></li>
+<li><a href="/pesquisa/multi_caixas/precos?ClasseProdutoX=2&CodCategoriaX=11&XF=1318">Vcom</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fcameras">Câmeras e webcam</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XG=3">Fotográficas Digitais até 14 Megapixels</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XG=4">Fotográficas Digitais acima de 14 Megapixels</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XK=1">Fotográficas Digitais SLR</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2">Fotográficas  Digitais - todas</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=6">IP Câmeras/Servers</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=1">Câmeras e Artigos p/ Segurança</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=1301">Benq</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=10">Canon</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=62">Casio</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=6&XF=444">Edimax</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=105">Fuji</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=1675">GE</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=18">Genius</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=106">Nikon</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=3&XF=2803">GO-Pro</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=20">HP</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=24">Kodak</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=107">Olympus</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=812">Panasonic</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=1550">Powerpack</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=2&XF=48">Sony</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=2&XF=2613">X Concept</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=4">Câmera de ré (Automotiva)</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=2">Web  Câmeras</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=3">Filmadoras digitais</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=3">Acessórios (cabos, capas...)</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=3&XF=2803">Acessórios GO-Pro</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3&XE=1">Cabos USB para Câmeras</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=0">Cabos Firewire</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4&XE=4">Placas e Cartões Firewire</a></li>
+<li><a href="/pesquisa/carregadores">Carregadores e pilhas</a>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=7">Fitas para filmadoras</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=8">Flash/Iluminadores</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=7&CodCategoriaX=36&XT=0&XE=2">Impressoras Fotográficas</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=7&CodCategoriaX=41&XT=4&XE=2">Kits e papéis fotográficos</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores de memórias</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=9">Lentes, Objetivas e Filtros</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=10">Tripés</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=1">Memórias - CF - Compct Flash</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=2">Memórias - MMC - Mult Media Card</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=3">Memórias - MS - Memory Stick</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&Xj=0">Memórias - SD - Secure Digital</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&Xj=1">Memórias - Micro SD/SDHC</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=4&Xj=2">Memórias - Mini SD</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=6">Memórias - SxS</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3&XG=5">Memórias - XD</a></li>
+<li><a href="/pesquisa/multi_cameras/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3">Memórias - Todas</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/carregadores">Carregadores e Baterias</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=0&XG=2">Baterias p/ Celulares e Rádios</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=0&XG=1">Baterias p/ Notebooks/Netbooks</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=0">Baterias e Pilhas (Todas)</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=1&XG=2">Fontes/Carregadores p/ Celulares e Rádios</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=1&XG=1">Fontes/Carregadores p/ Notebooks e Netbooks</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=1&XK=7">Fontes/Carregadores p/ Uso em Veículos</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XE=1">Fontes/Carregadores (Todos)</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=2">Acer</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=66">Apple</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=8">Asus</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=2015">Blackberry</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=2097">C3 Tech</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=10">Canon</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=407">Dell</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=1507">Duracell</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=2803">GO-Pro</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=20">HP</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=94">Leadership</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=1141">Maxell</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=32">Motorola</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=2402">Mox</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=106">Nikon</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=771">Nokia</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=107">Olympus</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=48">Sony</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=51">Toshiba</a></li>
+<li><a href="/pesquisa/carregadores/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=4&XF=1510">Vivitar</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fplacasom">Placas de Som</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_placasom/precos?ClasseProdutoX=2&CodCategoriaX=8&XT=1">Placas de Som PCI</a></li>
+<li><a href="/pesquisa/multi_placasom/precos?ClasseProdutoX=2&CodCategoriaX=8&XT=2">Placas de Som USB</a></li>
+<li><a href="/pesquisa/multi_placasom/precos?ClasseProdutoX=2&CodCategoriaX=8">Todas</a></li>
+<li><a href="/pesquisa/multi_placasom/precos?ClasseProdutoX=2&CodCategoriaX=8&XF=12">Creative Labs/SoundBlaster</a></li>
+<li><a href="/pesquisa/multi_placasom/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1">Headphones e microfones</a></li>
+<li><a href="/pesquisa/multi%5Fcaixas">Caixas de som</a>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fplacavideo">Placas de Vídeo/edição</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XT=0">Placas com até 512 MB</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XT=1">Placas com 1 GB</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XT=2">Placas com 2 GB</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XT=3">Placas com 3 GB</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XT=4">Placas com 4 GB ou +</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XK=2">DDR2</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XK=3">DDR3</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XK=4">DDR4</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XK=5">DDR5</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XE=3">AGP</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XE=4">PCI Express</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=14&XT=1">Placas de Edição/Captura</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=2">Receptores TV e Sintonizadores de TV Digital</a></li>
+<li><a href="/pesquisa/out%5Fcabos">Cabos (HDMI, DVI,...)</a>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=4">Coolers para placas de vídeo e chipset</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=11">Switch HDMI</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=5">AMD FirePro</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3">GeForce - Todas</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=6">GeForce 6xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=7">GeForce 7xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=8">GeForce 8xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=9">GeForce 9xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=3">GeForce G</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=4">GeForce GT</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=5">GeForce GTS</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=3&XJ=2">GeForce GTX</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XJ=1">Quadro</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4">Radeon - Todas</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=5">Radeon HD5xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=6">Radeon HD6xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=7">Radeon HD7xxx</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=10">Radeon R5</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=8">Radeon R7</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XG=4&XJ=9">Radeon R9</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=8">Asus</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=454">ECS</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1425">EVGA</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=532">Gigabyte</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1937">Mymax</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=710">MicroStar - MSI</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=14&XT=1&XF=833">Pinacle</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1939">Point of View</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1374">Powercolor</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1332">Saphire</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1238">XFX</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=1911">Zogis</a></li>
+<li><a href="/pesquisa/multi_placavideo/precos?ClasseProdutoX=2&CodCategoriaX=7&XF=2144">Zotac</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fprojetor">Projetores e telas</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9&XE=1">Projetor até 1000 Lumens</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9&XE=2">Projetor acima de 1000 Lumens</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9&XT=1">Projetor com resolução 800 x 600</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9&XT=2">Projetor com resolução 1024 x 768</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9&XT=3">Projetor com resolução acima de 1024 x 768</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=9">Todos os projetores</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=5&XT=1">Retroprojetor</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=5&XT=3">Telas para projeção</a></li>
+<li><a href="/pesquisa/multi_projetor/precos?ClasseProdutoX=2&CodCategoriaX=5&XT=2">Lâmpadas e acessórios</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fpenmp3">MP3, MP4 e Pen Drives</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=0">Pen Drive USB até 2 Gb</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=0">Pen Drive USB de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=0">Pen Drive USB de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=5&XG=0">Pen Drive USB de 16 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=6&XG=0">Pen Drive USB  de 32 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=7&XG=0">Pen Drive USB  de 64 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=8&XG=0">Pen Drive USB  de 128 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=0">Pen Drive USB - Todos</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=0&XK=3">PenDrive USB 3.0</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=1">Pen Drive USB/MP3 player até 2 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=1">Pen Drive USB/MP3 de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=1">Pen Drive USB/MP3 de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=1&XG=2">Pen Drive USB/MP4 player até 2 Gb</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=2&XG=2">Pen Drive USB/MP4 de 2 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=3&XG=2">Pen Drive USB/MP4 de 4 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=4&XG=2">Pen Drive USB/MP4 de 8 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=5&XG=2">Pen Drive USB/MP4 player de 16 GB</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XE=6&XG=2">Pen Drive USB/MP4 player de 32 GB ou +</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=1">MP3 player - Todos</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XG=2">MP4 player - Todos</a></li>
+<li><a href="/pesquisa/compu%5Fcelular">Celulares, MP7, MP8, MP9, MP10...</a>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=66">iPod</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=66">Apple</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=624">Kingston</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=1204">Markvision</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=1431">Sandisk</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=2&XF=48">Sony</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=4&CodCategoriaX=22&XT=3">Capas e acessórios</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=0">Cabos Firewire</a></li>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3">Cabos USB</a></li>
+<li><a href="/pesquisa/carregadores">Pilhas e carregadores</a>
+<li><a href="/pesquisa/multi_penmp3/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores e adaptadores de cartões de memória</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fplaystation">Vídeo Games e afins</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=11">Jogos p/ 3DS</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=8">Jogos p/ DS</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=9">Jogos p/ Game Boy</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=7">Jogos p/ Game Cube</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=10">Jogos p/  Mac</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=4">Jogos p/ PC</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=1">Jogos p/ PS2</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=2">Jogos p/ PS3</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=13">Jogos p/ PS4</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=3">Jogos p/ PSP</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=12">Jogos p/ PS Vita</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=6">Jogos p/ Xbox 360</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=14">Jogos p/ Xbox One</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=5&XK=0">Jogos p/ Wii</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=5&XK=1">Jogos p/ Wii U</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=2">Acessórios p/ Consoles (Memory Cards, bases,...</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=10">Bonecos - Action Figures</a></li>
+<li><a href="/pesquisa/multi%5Fjoysticks">Joysticks e Gamepads</a>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=5">Peças (Fontes, Cooler, Drives...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XG=1">Fones e Headsets Bluetooth</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=1793">Consoles Nintendo (Wii, Wii U, DS, ...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=30">Consoles Microsoft (X-Box 360, X-Box One)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=48">Consoles Sony (PlayStations 2, 3, 4...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1">Consoles Todos (PlayStations, X-Box, Wii...)</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fjoysticks">Joysticks e Gamepads</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22&XJ=1">Joysticks e Gamepads P/  consoles Playstations</a></li>
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22&XT=1">Joysticks e Gamepads P/ PCs</a></li>
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22&XG=1">Joysticks e Gamepads P/  consoles WII</a></li>
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22&XE=1">Joysticks e Gamepads P/  consoles Wii U</a></li>
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22&XK=1">Joysticks e Gamepads P/  consoles X-Box</a></li>
+<li><a href="/pesquisa/multi_joysticks/precos?ClasseProdutoX=2&CodCategoriaX=22">Joysticks e Gamepads - Todos</a></li>
+<li><a href="/pesquisa/multi%5Fplaystation">Consoles, jogos e acessórios</a>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Foutros">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=9">GPS</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=6&XE=4">Câmras de ré e sensores de estacionamento(Automotiva)</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=2">Microfones</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=1">Headphones</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=0">Microfones com Headphones</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XJ=1">Headphones Sem Fio</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XG=1">Fones e Headsets Bluetooth</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=15">Centrais Multimídia</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=10">Gravador Digital</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=11">Gravador de DVD de mesa</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=7&CodCategoriaX=8">DVD/CD Automotivo</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=7&CodCategoriaX=7">DVD Portátil</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=2">Receptores e Sintonizadores de TV Digital</a></li>
+<li><a href="/pesquisa/multi%5Fpenmp3">MP3, MP4, MP5 e Pen drives</a>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=5">Porta retrato digital</a></li>
+<li><a href="/pesquisa/multi%5Fjoysticks">Joysticks e Gamepads</a>
+<li><a href="/pesquisa/multi%5Fplaystation">PlayStation e outros</a>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=5">Leitores e adaptadores de cartões de memória</a></li>
+<li><a href="/pesquisa/multi_outros/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=7">Outros</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Redes</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red%5Fcab">Cabeamento/Acessórios</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=1">Cabos</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=2">Conectores</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3">Ferramentas</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=4">Espelhos e Tomadas</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=5">Adaptadores</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=6">Rack e acessórios</a></li>
+<li><a href="/pesquisa/red_cab/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/red%5Fhub">HUB e Switch</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XE=1">HUB e Switch até 8 Portas</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XE=2">HUB e Switch 12 e 16 Portas</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XE=3">HUB e Switch acima de 16 Portas</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=1">3COM (HP Network)</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=428">DLink</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=70">Encore</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=20">HP</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=22">Intel</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=1443">Kaiomy</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=26">LG</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=650">Cisco/Linksys</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=3&XF=836">Planet</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=51&XT=6">HUB USB</a></li>
+<li><a href="/pesquisa/red_hub/precos?ClasseProdutoX=9&CodCategoriaX=47&XG=3">Modem P/ Banda Larga</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/red%5Fmod">Modem/Roteador</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XT=2">Modem Interno</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XT=3">Modem Externo</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XG=3">Modem P/ Banda Larga</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XG=9">Modem p/ Banda Larga com Roteador Wireless</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XE=4">Modem USB</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47">Todos</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XF=428">Dlink</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XF=1443">Kaiomy</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XF=32">Chipset Motorola</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=47&XF=1924">TP-Link</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=2">Roteador p/ compartilhamento</a></li>
+<li><a href="/pesquisa/red_mod/precos?ClasseProdutoX=9&CodCategoriaX=50">Equipamentos 3G</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/red%5Fplac">Placas de Rede</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XT=2">PCI</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XT=4">PCI-E</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XT=3">PCMCIA</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XT=5">USB</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XE=0">10/100</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XE=2">10/100/1000</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48">Todas</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=1">3COM (HP Network)</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=428">D-Link</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=70">Encore</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=61">IBM</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=22">Intel</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=1836">Intelbrás</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=1443">Kaiomy</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=48&XF=836">Planet</a></li>
+<li><a href="/pesquisa/red_plac/precos?ClasseProdutoX=9&CodCategoriaX=52">Blue Tooth</a></li>
+<li><a href="/pesquisa/rede%5Fwire">Dispositivos Wireless</a>
+</ul>
+</li>
+<li><a href="/pesquisa/precos/precos?ClasseProdutoX=9&CodCategoriaX=54">Powerline</a></li>
+<li><a href="/pesquisa/voip">VoIP</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XT=1">Telefones</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XT=2">Roteadores</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XT=3">Outros</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55">Todos</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XF=428">D-Link</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XF=650">Linksys</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=9&CodCategoriaX=55&XF=836">Planet</a></li>
+<li><a href="/pesquisa/voip/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XE=0">Headsets</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/rede%5Fwire">Wireless</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5">Access Point e Roteadores Wireless - Todos</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XJ=0">Access Point e Roteadores Wireless - G</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XJ=2">Access Point e Roteadores Wireless - N (Todos)</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XJ=2&XK=1">Access Point e Roteadores Wireless - N 150 Mbps</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XJ=2&XK=2">Access Point e Roteadores Wireless - N 300 Mbps</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XJ=2&XK=3">Access Point e Roteadores Wireless - N 450 Mbps ou +</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=1">Antenas</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=7">Print Server Wireless</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=5&XG=9">Modem p/ Banda Larga com Roteador Wireless</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=15&CodCategoriaX=7&XJ=1">HD Wireless - Wi-fi</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=6">Mini PCI</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=2">PCMCIA</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=3">PCI / PCI-e</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=4">USB</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=0">Outros</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=54">Powerline</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=1">3COM (HP Network)</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=428">Dlink</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=70">Encore</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=1280">GTS Telecom</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=1836">Intelbrás</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=650">Linksys</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=836">Planet</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=932">Siemens</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=2117">Tenda</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=1924">TP-Link</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XF=90">Trendnet</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=52">Blue Tooth</a></li>
+<li><a href="/pesquisa/rede_wire/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=8&XE=8">Infravermelho</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/red%5Fout">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=52">Blue Tooth</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=60">Fibra Ótica</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=55">VoiceIP</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=6">IP Câmeras/ Servers</a></li>
+<li><a href="/pesquisa/rede%5Fwire">Dispositivos Wireless</a>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=54">Powerline</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=8&CodCategoriaX=44&XG=1">Fontes Redundantes</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=9">Gabinetes para Rack</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=47&XG=3">Modem para Banda Larga</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=1">Print Server</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=6">Rack e acessórios</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=2">Roteador</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=10">Thin Client</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=5">Tranceivers/Paths/Conversor de Mídia</a></li>
+<li><a href="/pesquisa/red_out/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=0">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/precos/precos?ClasseProdutoX=9&CodCategoriaX=50">3G</a></li>
+<li><a href="/pesquisa/ferramentas">Ferramentas</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=3">Alcool Isopropílico, Limpa Contatos...</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=1">Alicates e Decapadores de Fios</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=4">Kits de Ferramentas</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=5">Limpeza de Telas</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=2">Multimetros e Testadores</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=0">Outras</a></li>
+<li><a href="/pesquisa/ferramentas/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3">Todas</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Periféricos</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri%5Fmonitores">Monitores/TVs</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XE=1">Monitores até 15 polegadas</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XE=3">Monitores de 17 a 19 polegadas</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XE=4">Monitores de 20 a 22 polegadas</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XE=5">Monitores acima de 22 polegadas</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6">Monitores - Todos</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XK=1">Monitores LED - Todos</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XG=1">Monitores e TVs 3D</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=2">Acer</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=7">AOC</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=1301">Benq</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=26">LG</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=38">Philips</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=45">Samsung</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XF=48">Sony</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=4">Monitores Touchscreen</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XE=9">Telas de Plasma</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=6&CodCategoriaX=29&XT=6&XJ=9">TVs</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=4">Google Chromecast</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=2">Receptores TV e Sintonizadores de TV Digital</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=2&XE=1">Sintonizadores de TV P/ monitores</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=6&XE=1">Antenas, amplificadores de sinal e afins</a></li>
+<li><a href="/pesquisa/out%5Fcabos">Cabos (HDMI, DVI,...)</a>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=3">Controles Remoto</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=3&XG=5">Produtos P/ Limpeza de Telas</a></li>
+<li><a href="/pesquisa/multi%5Fprojetor">Projetores e Telas</a>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=6&XE=0">Suportes</a></li>
+<li><a href="/pesquisa/peri_monitores/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=11">Switch HDMI</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/peri%5Fmouse">Mouses</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XT=1">Serial</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XT=2">PS2</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XT=3">USB</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XE=3">Trackball</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XJ=1">Laser</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XG=1">Ótico</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XE=2">Sem fio</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30">Todos os Mouses</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=123">A4Tech</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=1171">CoolerMaster</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=18">Genius</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=94">Leadership</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=27">Logitech</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=30">Microsoft</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=1767">Razer</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=1318">VCom</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=30&XF=1254">XPC</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=8">Kit Teclado + Mouse</a></li>
+<li><a href="/pesquisa/peri_mouse/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=7">Mouse Pads</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/peri%5Fscanners">Scanners, Cdg de Barras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32&XF=10">Canon</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32&XF=296">Brother</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32&XF=15">Epson</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32&XF=17">Fujitsu</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32&XF=20">HP</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=32">Todos</a></li>
+<li><a href="/pesquisa/peri_scanners/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=2">Leitores de código de barras</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/peri%5Fpalmtops">Palmtops</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri_palmtops/precos?ClasseProdutoX=6&CodCategoriaX=35&XT=1">Modem</a></li>
+<li><a href="/pesquisa/peri_palmtops/precos?ClasseProdutoX=6&CodCategoriaX=35&XT=2">Cabos</a></li>
+<li><a href="/pesquisa/peri_palmtops/precos?ClasseProdutoX=6&CodCategoriaX=35&XT=3">Cases</a></li>
+<li><a href="/pesquisa/peri_palmtops/precos?ClasseProdutoX=3&CodCategoriaX=17&XT=3">Memórias</a></li>
+<li><a href="/pesquisa/peri_palmtops/precos?ClasseProdutoX=6&CodCategoriaX=35&XT=4">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/precos/precos?ClasseProdutoX=9&CodCategoriaX=53">Mesas Digitalizadoras</a></li>
+<li><a href="/pesquisa/peri%5Fteclados">Teclados</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=4">AT</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=1">PS2</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=2">USB</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XK=1">Bluetooth</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=1&XG=1">Multimídia PS/2</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=2&XG=1">Multimídia USB</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XG=1">Multimídia - Todos</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XG=2">Ergonômico</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XJ=1">Numérico</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XJ=5">Sem fio</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=8">Kit Teclado + Mouse - Todos</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=8&XJ=0">Kit Teclado + Mouse Com Fio</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=8&XJ=5">Kit Teclado + Mouse Wireless - Sem Fio</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33">Todos os Teclados</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=123">A4Tech</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=66">Apple</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=18">Genius</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=1289">Goldship</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=94">Leadership</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=27">Logitech</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=30">Microsoft</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=1767">Razer</a></li>
+<li><a href="/pesquisa/peri_teclados/precos?ClasseProdutoX=6&CodCategoriaX=33&XF=1318">VCOM</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Software</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft%5Fop">Sist. Operacionais</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=9">Windows 8</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=8">Windows 7</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=3">Windows Server</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=7">Windows VISTA</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=2">Windows XP / 2000 Pro</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=4">Netware</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=5">Unix / Linux</a></li>
+<li><a href="/pesquisa/soft_op/precos?ClasseProdutoX=14&CodCategoriaX=1&XT=6">Apple</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Fapli">Aplicativos</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_apli/precos?ClasseProdutoX=14&CodCategoriaX=2&XT=1">Apresentação (Project...</a></li>
+<li><a href="/pesquisa/soft_apli/precos?ClasseProdutoX=14&CodCategoriaX=2&XT=2">Imagem/CAD (Corel, Photoshop...)</a></li>
+<li><a href="/pesquisa/soft_apli/precos?ClasseProdutoX=14&CodCategoriaX=2&XT=3">Suítes (Office...)</a></li>
+<li><a href="/pesquisa/soft_apli/precos?ClasseProdutoX=14&CodCategoriaX=2&XT=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Fprog">Programação</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_prog/precos?ClasseProdutoX=14&CodCategoriaX=3&XT=1">Web</a></li>
+<li><a href="/pesquisa/soft_prog/precos?ClasseProdutoX=14&CodCategoriaX=3&XT=2">Linguagens</a></li>
+<li><a href="/pesquisa/soft_prog/precos?ClasseProdutoX=14&CodCategoriaX=3&XT=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Fbd">Banco de dados</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_bd/precos?ClasseProdutoX=14&CodCategoriaX=4&XT=1">Microsoft</a></li>
+<li><a href="/pesquisa/soft_bd/precos?ClasseProdutoX=14&CodCategoriaX=4&XT=2">Oracle</a></li>
+<li><a href="/pesquisa/soft_bd/precos?ClasseProdutoX=14&CodCategoriaX=4&XT=3">Pervasive</a></li>
+<li><a href="/pesquisa/soft_bd/precos?ClasseProdutoX=14&CodCategoriaX=4&XT=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Fsoftrede">Software Rede</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=1">Administração</a></li>
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=2">Segurança</a></li>
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=3">Utilitários</a></li>
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=4">Comunicação</a></li>
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=5">Backup</a></li>
+<li><a href="/pesquisa/soft_softrede/precos?ClasseProdutoX=14&CodCategoriaX=5&XT=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Futi">Utilitários (antivirus, backup...)</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XT=1">Anti-vírus</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XT=2">Comunicação</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XT=3">Backup</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XT=9">Outros</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XF=2240">Kaspersky</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XF=1145">Norton</a></li>
+<li><a href="/pesquisa/soft_uti/precos?ClasseProdutoX=14&CodCategoriaX=6&XF=1916">Panda</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/soft%5Fsis">Sistemas</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/soft_sis/precos?ClasseProdutoX=14&CodCategoriaX=7&XT=1">Folha de Pagamento</a></li>
+<li><a href="/pesquisa/soft_sis/precos?ClasseProdutoX=14&CodCategoriaX=7&XT=2">Automação Comercial</a></li>
+<li><a href="/pesquisa/soft_sis/precos?ClasseProdutoX=14&CodCategoriaX=7&XT=3">Controle de Estoque</a></li>
+<li><a href="/pesquisa/soft_sis/precos?ClasseProdutoX=14&CodCategoriaX=7&XT=9">Outros</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/multi%5Fplaystation">Jogos (Games)</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=11">Jogos p/ 3DS</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=8">Jogos p/ DS</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=9">Jogos p/ Game Boy</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=7">Jogos p/ Game Cube</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=10">Jogos p/  Mac</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=4">Jogos p/ PC</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=1">Jogos p/ PS2</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=2">Jogos p/ PS3</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=13">Jogos p/ PS4</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=3">Jogos p/ PSP</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=12">Jogos p/ PS Vita</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=6">Jogos p/ Xbox 360</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=14">Jogos p/ Xbox One</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=5&XK=0">Jogos p/ Wii</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=13&XT=8&XE=4&XJ=5&XK=1">Jogos p/ Wii U</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=2">Acessórios p/ Consoles (Memory Cards, bases,...</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=13&CodCategoriaX=10">Bonecos - Action Figures</a></li>
+<li><a href="/pesquisa/multi%5Fjoysticks">Joysticks e Gamepads</a>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=5">Peças (Fontes, Cooler, Drives...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=1&XG=1">Fones e Headsets Bluetooth</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=1793">Consoles Nintendo (Wii, Wii U, DS, ...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=30">Consoles Microsoft (X-Box 360, X-Box One)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1&XF=48">Consoles Sony (PlayStations 2, 3, 4...)</a></li>
+<li><a href="/pesquisa/multi_playstation/precos?ClasseProdutoX=2&CodCategoriaX=13&XT=8&XE=1">Consoles Todos (PlayStations, X-Box, Wii...)</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out%5Fauto">Automação Comercial</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=5">Balanças</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=1">Bobinas</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=7">Leitores de Cartões</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=4">Monitores Touchscreen</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=6">Ribbons</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=2">Scanner e leitores de codigo de barras</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=14&CodCategoriaX=7&XT=2">Sistemas</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=33&XJ=1">Teclados Númericos</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=0">Outros</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3">Impressoras Comerciais</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3&XE=1">Impressoras de Cheques</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=6&CodCategoriaX=34&XT=3&XE=0&XG=1">Impressoras Fiscais</a></li>
+<li><a href="/pesquisa/out_auto/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=5">Filtros de Linha e Protetores</a></li>
+<li><a href="/pesquisa/out%5Fnobre">Nobreaks</a>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fcabos">Cabos/Adaptadores</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=5">IDE</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=0">Firewire</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=4">Força</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=2">Paralelo</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=10">SAS</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=8">SATA</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=1">SCSI</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3">USB</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3&XE=1">USB para Câmeras</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=3&XE=2">USB para Celulares</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=6">Monitores/TV</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=6&XG=1">HDMI</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=7">Adaptadores</a></li>
+<li><a href="/pesquisa/out_cabos/precos?ClasseProdutoX=8&CodCategoriaX=42&XT=9">Outros Cabos</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fcontro">Controladoras</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4&XE=4">Firewire - IEEE 1394</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=2">SAS</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=1">SCSI</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=3">USB</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XT=4">Outras</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XF=3">Adaptec</a></li>
+<li><a href="/pesquisa/out_contro/precos?ClasseProdutoX=4&CodCategoriaX=25&XF=22">Intel</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Festabilizadores">Estabilizadores</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XT=1">Até 0,5 KVA</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XT=2">Acima de 0,5 KVA</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=5">Filtros de Linha e Protetores</a></li>
+<li><a href="/pesquisa/out%5Fnobre">Nobreaks</a>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=1527">BMI</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=1812">Enermax</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=6">Microsol/APC</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=1373">NHS</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=1197">Ragtech</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=47">SMS</a></li>
+<li><a href="/pesquisa/out_estabilizadores/precos?ClasseProdutoX=8&CodCategoriaX=50&XF=93">TS Shara</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Ffonte">Fontes</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=1">AT</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=2">ATX</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XG=1">Redundantes</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44">Todas</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=2752">Aerocool</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=2097">C3 Tech</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1171">Coolermaster</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1920">Extream</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=22">Intel</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1937">Mymax</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1341">OCZ</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=2670">PCTop</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1332">Sapphiretech</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=2619">Seasonic</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=2944">Sentey</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1369">SevenTeam</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1162">Thermaltake</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1318">VCOM</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1238">XFX</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XF=1310">Zalman</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=2&XK=0">ATX com potência de até 220W</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=2&XK=1">ATX com potência de 230W até 350W</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=2&XK=2">ATX com potência de 360W até 500W</a></li>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=44&XT=2&XK=3">ATX com potência acima de 500W</a></li>
+<li><a href="/pesquisa/carregadores">Carregadores, Pilhas e Baterias</a>
+<li><a href="/pesquisa/out_fonte/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=5">Filtros de Linha e Protetores</a></li>
+<li><a href="/pesquisa/out%5Fnobre">Nobreaks</a>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fgabi">Gabinetes/Gavetas</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=1&XE=2">ATX/ITX Mini/Micro Torre</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=2&XE=2">ATX/ITX Torre Média</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=3&XE=2">ATX/ITX Torre Grande</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=4&XE=2">ATX/ITX Desk top ( mesa )</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=5&XE=2">ATX/ITX SEM FONTE</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XG=1">ITX (Todos)</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XE=2">ATX (Todos)</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=9">Gabinetes para Rack e servidores</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45">Todos</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=6&CodCategoriaX=33&XT=9">Kits</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=9&CodCategoriaX=49&XT=9&XE=6">Racks e Acessórios</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=2752">Aerocool</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1203">Casemall</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1439">Coletek</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1171">Coolermaster</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=370">Corsair</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=2459">Fortrek</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1611">Gamer</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XT=9&XF=22">Intel</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=94">Leadership</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1214">Maxxtro</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1137">Nilko</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=2670">PcTop</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1162">Thermaltake</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=45&XF=1318">Vcom</a></li>
+<li><a href="/pesquisa/out%5Ffonte">Fontes</a>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=2">Gaveta e Cases</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=1">Coolers e Ventiladores</a></li>
+<li><a href="/pesquisa/out_gabi/precos?ClasseProdutoX=5&CodCategoriaX=28&XT=2&XE=2">Neons e acessórios</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fnobre">NoBreaks</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XT=1">Até 650 VA</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XT=2">De 700 VA até 1 KVA</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XT=3">De 1.1 KVA até 1.900 KVA</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XT=4">De 2.000 KVA ou mais</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XT=9">Peças e acessórios</a></li>
+<li><a href="/pesquisa/out%5Festabilizadores">Estabilizadores</a>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=5">Filtros de Linha e Protetores</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=6">Microsol/APC</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=2642">Eaton</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=1812">Enermax</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=1373">NHS</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=1197">Ragtech</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=47">SMS</a></li>
+<li><a href="/pesquisa/out_nobre/precos?ClasseProdutoX=8&CodCategoriaX=46&XF=93">TS Shara</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Fseg">Segurança/Telefonia</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=1">Câmeras</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=12">Camêras Espiãs</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=2&CodCategoriaX=6&XT=6">Câmeras IP</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=16">Caixas de proteção e Domes</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=10">DVR Stand Alone - Gravador Digital de Vídeo</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=2">DVR - Placas</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=19">Kit Câmera/Monitor</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=4">Fragmentadora de papéis</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=3">Leitores Biométricos</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=6">Outros</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=7">Alarmes</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=11">Cerca Elétrica - Centrais Completas e Partes</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=22">Controle de Acesso</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=13">Controle Remoto P/ Alarmes e Portões</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=9">Sensores</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=8">Sirenes</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=20">Automatizador de Portão</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=21">Fechaduras</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=18">Gravador/identificador Telefônico</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=15">PABX e Acessórios</a></li>
+<li><a href="/pesquisa/out_seg/precos?ClasseProdutoX=8&CodCategoriaX=1&XT=14">Vídeo Porteiro e Porteiro Eletrônico</a></li>
+</ul>
+</li>
+<li><a href="/pesquisa/out%5Foutros">Outros</a>
+<ul class="sub_menu">
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=6">Caixa Comutadora</a></li>
+<li><a href="/pesquisa/ferramentas">Ferramentas</a>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=5">Filtros de Linha e Protetores</a></li>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=2">Gavetas e Cases</a></li>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=9&CodCategoriaX=51&XT=6">Hub USB</a></li>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=7">Mouse Pads</a></li>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=4">Telas Anti-reflexiva</a></li>
+<li><a href="/pesquisa/out_outros/precos?ClasseProdutoX=8&CodCategoriaX=52&XT=0">Outros</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+<li><a href="/inicioservico.asp">Serviços</a></li>
+<li><a href="/iniciousados.asp">Usados</a></li>
+<li><a href="/inicioclassi.asp">Classificados</a></li>
+<li><a href="/iniciomanuais.asp">Manuais</a></li>
+<li><a href="http://www.forumboadica.com.br/">Fórum</a></li>
+<li><a href="/dicas">Dicas</a></li>
+<li><a href="/programas">Programas</a></li>
+<li><a href="/inicio_fccid.asp">FCC-ID</a></li>
+<li><a href="/iniciodrivers.asp">Drivers</a></li>
