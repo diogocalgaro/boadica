@@ -2,3 +2,4 @@ gerar_backup.sh
 dados.sqlite3.gz
 publicar.sh
 db
+workdir

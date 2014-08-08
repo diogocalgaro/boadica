@@ -33,13 +33,85 @@ do
 		"" "=============================="   \
 		H "Carregar dados de hoje"            \
 		E "Estatísticas da base de dados"     \
-		A "Sobre"                             \
+		A "Sobre este script"                 \
 		"" "=============================="   \
 		S "Sair")
 
 	test $? -ne 0 && break
 		
 	case "$op" in
+		"L") #lojas
+			lojas_filtro=1
+			lojas_filtro_txt="Ver todas as lojas (DESATIVAR FILTRO)"
+			lojas_filtro_sql="where o.consultar='S'"
+			op2=""
+			while [ "$op2" != "V" ]
+			do
+				i=$(sqlite3 -list -separator " " ${db} "select id, quote(loja||'   ['||produtos||']') from (select q.id, q.loja, count(distinct p.produto) as produtos from (select l.id, l.nome||',   '||o.nome as loja from lojas l inner join locais o on (o.id = l.local) ${lojas_filtro_sql}) q left join precos p on (p.loja = q.id) group by 1, 2) order by 2;")
+				i=${i//$'\n'/ }
+				i=${i//\'/\"}
+
+				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
+					--menu 'Lojas' 30 90 23 \
+					V 'Voltar' \
+					B 'Buscar por uma loja' \
+					T '"${lojas_filtro_txt}"' \
+					F 'Editar filtro de bairros visíveis' \
+					'' '==============================================================================' \
+					${i})"
+
+				case "$op2" in
+					"B") #buscar loja
+# APROVEITAR ESSA PARTE DO CODIGO ANTERIOR
+#						l=$(whiptail --title "Consultar Loja" --inputbox "Informe o nome da loja" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)
+#						if [ $? -eq 0 -a -n "$l" ]
+#						then
+#							i=$(sqlite3 -csv $db "select id, nome||' ('||localizacao||')' as item from tb_lojas where nome like '%${l}%';" | tr '\n' ' ' | tr ',' ' ')
+#
+#							eval "cod=\$(whiptail --notags --menu 'Selecione a loja' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)"
+#							if [ -n "$cod" ]
+#							then
+#								naveg_cmd="$(which $naveg_opcoes xdg-open 2>/dev/null | head -n1)"
+#								$naveg_cmd "${pag_vendedor}${cod}" >/dev/null 2>&1 &
+#							fi
+#						fi
+#						p=$(dialog --title "Consultar loja" --inputbox "Informe o nome da loja" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)
+#						if [ $? -eq 0 -a -n "$p" ]
+#						then
+#							tmp=$(mktemp)
+#							sqlite3 -cmd ".width 20 35 8 17 10" -header -column $db "select * from vw_buscar_por_loja where Loja like '%${p}%';" > $tmp
+#							whiptail --title "Consultar itens da loja" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
+#							rm $tmp
+#						fi ;;
+;;
+					"T") #ver todas as lojas, sem filtro
+						if [ $lojas_filtro -eq 1 ]
+						then
+							lojas_filtro=0
+							lojas_filtro_txt="Ver somente as lojas dos bairros selecionados (ATIVAR FILTRO)"
+							lojas_filtro_sql=""
+						else
+							lojas_filtro=1
+							lojas_filtro_txt="Ver todas as lojas (DESATIVAR FILTRO)"
+							lojas_filtro_sql="where o.consultar='S'"
+						fi ;;
+					"F") #editar filtro de bairro
+						i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 2" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
+						cod=""
+						eval "cod=\$(dialog --stdout --checklist 'Locais visíveis' 30 60 23 ${i})"
+		
+						if [ "$?" -eq 0 ]
+						then
+							cod="$(echo $cod | sed 's/ /,/g;s/"//g')"
+							sql="update locais set consultar = 'N'; update locais set consultar='S' where id in (${cod});"
+							sqlite3 ${db} "${sql}"
+						fi
+
+						sql="select count(*) from locais where consultar='S';"
+						res=$(sqlite3 ${db} "${sql}")
+						dialog --msgbox "Localidades incluídas nas pesquisas: ${res:-0}" 7 50 ;;
+				esac
+			done ;;
 		"C") #categorias
 			op2=""
 			while [ "$op2" != "V" ]
@@ -54,7 +126,7 @@ do
 					V 'Voltar' \
 					I 'Incluir nova categoria' \
 					T 'Atualizar todas' \
-					'' '===============' \
+					'' '===========================================' \
 					${i})"
 
 				case "$op2" in
@@ -80,6 +152,15 @@ do
 						esac ;;
 				esac
 			done ;;
+		"H")
+			${base}/atualizar_todas.sh ;;
+		"E")
+			tmp="$(mktemp)"
+			sqlite3 -cmd ".width 48" -header -column $db "select * from vw_obter_estatisticas;" > "$tmp"
+			dialog --title "Estatísticas da base de dados" --textbox $tmp 16 60
+			rm "$tmp" ;;
+		"A")
+			dialog --title "Sobre..." --textbox ${base}/ABOUT.md 25 60 ;;
 	esac
 
 
