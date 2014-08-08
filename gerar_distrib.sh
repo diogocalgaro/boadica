@@ -11,7 +11,8 @@ then
 
 	#inserindo dados padrao
 	echo "INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');" >> "${dump}"
-	echo "INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '1.00');" >> "${dump}"
+	echo "INSERT INTO categorias (id, nome, url) VALUES ('0', 'Desconhecida', '/pesquisa/precos');" >> "${dump}"
+	echo "INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '2.0');" >> "${dump}"
 	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');" >> "${dump}"
 	echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_max', '100');" >> "${dump}"
 	echo "COMMIT;" >> "${dump}"
@@ -24,13 +25,11 @@ rm -rf distrib/*
 
 #copiando arquivos novos
 echo "Copiando arquivos:"
-cp -v boadica.sh config.inc dados.dump obter_dados.sh criar_grafico.sh setup.sh distrib/
+cp -v boadica.sh config.inc funcoes.inc dados.dump obter_dados.sh criar_grafico.sh setup.sh incluir_categoria.sh atualizar_todas.sh  distrib/
 touch distrib/"$(basename $arq_svg)"
 
 #removendo categoria padrao
-sed -i '/^categ=/d;/^url_dados=/d;/^instalado/d' distrib/config.inc
-echo 'categ=""' >> distrib/config.inc
-echo 'url_dados=""' >> distrib/config.inc
+sed -i '/^instalado/d' distrib/config.inc
 echo 'instalado="N"' >> distrib/config.inc
 
 #gerar arquivo compactado pra distribuicao (parametro "-zip")

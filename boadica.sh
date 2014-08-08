@@ -1,7 +1,7 @@
 #!/bin/bash
 ################################################################################
 #
-# Script de consulta aos dados de uma categoria específica do site BoaDica
+# Script de consulta aos dados do site BoaDica
 #
 # github.com/diogocalgaro/boadica
 #
@@ -9,63 +9,86 @@
 
 #verificando a instalacao
 $(dirname $0)/setup.sh x #se o script receber algum parametro ele sabe que foi chamado por outro script
-if [ ! $? -eq 0 ]
-then
-	exit $?
-fi
-
+test $? -ne 0 && exit $?
 
 #config basica
 source $(dirname $0)/config.inc
 
+#funcoes
+source ${base}/funcoes.inc
 
-#variaveis
-op="B"
+#laco principal
+op="P"
+while [ "$op" != "S" ]
+do
+	#menu principal
+	op=$(dialog --title "Busca Boadica ${versao}" \
+		--stdout                              \
+		--no-cancel                           \
+		--default-item "$op"                  \
+		--menu "Menu principal" 16 45 9       \
+		P "Produtos"                          \
+		L "Lojas"                             \
+		C "Categorias"                        \
+		"" "=============================="   \
+		H "Carregar dados de hoje"            \
+		E "Estatísticas da base de dados"     \
+		A "Sobre"                             \
+		"" "=============================="   \
+		S "Sair")
+
+	test $? -ne 0 && break
+		
+	case "$op" in
+		"C") #categorias
+			op2=""
+			while [ "$op2" != "V" ]
+			do
+				i=$(sqlite3 -list -separator " " ${db} "select id, quote(nome||' ['||total||']') from (select c.id, c.nome, count(p.id) as total from categorias c left join produtos p on (p.categoria = c.id) where c.id <> '0' group by 1, 2 order by c.nome);")
+				i=${i//$'\n'/ }
+				i=${i//\'/\"}
+
+				eval "op2=\$(dialog --stdout \
+					--no-cancel \
+					--menu 'Categorias selecionadas' 30 60 23 \
+					V 'Voltar' \
+					I 'Incluir nova categoria' \
+					T 'Atualizar todas' \
+					'' '===============' \
+					${i})"
+
+				case "$op2" in
+					"I") ${base}/incluir_categoria.sh ;;
+					"T") ${base}/atualizar_todas.sh ;;
+					[0-9]*)
+						n=$(sqlite3 ${db} "select count(*) from produtos p inner join categorias c on (c.id = p.categoria) where c.id = '${op2}';")
+						dialog --extra-button --extra-label "Remover" --ok-label "Ok" --cancel-label "Atualizar" --yesno "Essa categoria possui ${n} produto(s) cadastrado(s)." 7 60
+						case $? in
+							1) #atualizar
+								backup_db
+								${base}/obter_dados.sh "$op2" ;;
+							3) #remover
+								dialog --yesno "Tem certeza que deseja remover essa categoria e todos os seu produtos e preços cadastrados?" 10 60
+								if [ $? -eq 0 ]
+								then
+									sqlite3 ${db} "delete from precos where produto in (select id from produtos where categoria = '$op2');" && \
+									sqlite3 ${db} "delete from produtos where categoria = '$op2';" && \
+									sqlite3 ${db} "delete from categorias where id = '$op2';" && \
+									dialog --msgbox "Categoria removida com sucesso" 6 40 || \
+									dialog --msgbox "Falha ao remover categoria..." 6 40
+								fi ;;
+						esac ;;
+				esac
+			done ;;
+	esac
 
 
-#configuracoes de tamanho da janela
-eval "$(resize|head -n2|sed 's/^/export /g'|tr -d '\n')"
+done
 
-if [ ${COLUMNS:-30} -le 30 -o ${LINES:-12} -le 12 ]
-then
-	echo "O terminal não atende ao tamanho mínimo de 30x12."
-	echo "Tamanho atual ${COLUMNS}x${LINES}"
-	exit 1
-fi
+tput clear
 
-larg_jan_gr=$(( COLUMNS -6 )) #janelas grandes que ocupam toda a tela
-alt_jan_gr=$(( LINES -6 ))
-col_jan_gr=$(( larg_jan_gr -12 )) #largura da coluna descricao em janelas grandes
-menu_jan_gr=$(( alt_jan_gr -8 )) #altura util do menu em janelas grandes
-
-if [ ${larg_jan_gr:-0} -lt 50 ]
-then
-	larg_jan_pq=${larg_jan_gr:-0} #janelas pequenas centralizadas
-else
-	larg_jan_pq=50
-fi
-if [ ${alt_jan_gr:-0} -lt 10 ]
-then
-	alt_jan_pq=${alt_jan_gr:-0}
-else
-	alt_jan_pq=10
-fi
-menu_jan_pq=$(( alt_jan_pq -8 )) #altura util do menu em janelas pequenas
-
-if [ ${larg_jan_gr:-0} -lt 70 ]
-then
-	larg_jan_md=${larg_jan_gr:-0} #janelas pequenas centralizadas
-else
-	larg_jan_md=70
-fi
-if [ ${alt_jan_gr:-0} -lt 25 ]
-then
-	alt_jan_md=${alt_jan_gr:-0}
-else
-	alt_jan_md=25
-fi
-menu_jan_md=$(( alt_jan_md -8 )) #altura util do menu em janelas pequenas
-
+exit 0
+#############################################################################
 
 #laço principal
 while [ "$op" != "S" ]

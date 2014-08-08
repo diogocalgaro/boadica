@@ -108,4 +108,4 @@ then
         echo "ERRO: Não foi possível encontrar um programa para abrir .svg"
 	exit 1
 fi
-eval "${view_cmd} ${arq_svg}"
+${view_cmd} ${arq_svg}

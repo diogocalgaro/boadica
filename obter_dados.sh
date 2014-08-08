@@ -7,12 +7,21 @@ source $(dirname $0)/config.inc
 max_pags=99 #numero maximo de paginas pra processar por categoria
 
 #funcoes
-function fatal {
-	tput setf 4
-	echo -e "ERRO FATAL: $1"
-	tput sgr0
-	exit 1
-}
+source ${base}/funcoes.inc
+
+#parametros
+categ_id="${1}" #id da categoria (obrigatorio)
+test -z "$categ_id" && fatal "Nenhum id foi informada. Não é possível continuar."
+
+if [ -n "${2}" ] #url da primeira pagina da categoria (opcional, pra agilizar o processo)
+then
+	url="${2}"
+else
+	#obtendo url da categoria
+	url=$(sqlite3 ${db} "select url from categorias where id = '$categ_id';")
+	test -z "$url" && fatal "Nenhuma URL foi encontrada. Não é possível continuar."
+	url=${site}${url}
+fi
 
 #variaveis
 sql_insert="insert or replace"
@@ -22,7 +31,6 @@ arq3="$(mktemp)" #cache da tabela de locais
 sql="$(mktemp)"  #arquivo com os inserts pro sqlite
 p=""
 quando="$(date +'%Y-%m-%d')"
-url="$url_dados"
 urlprox=""
 urlult=""
 pag=0
@@ -76,7 +84,7 @@ then
 	case "$dw" in
 		"curl")
 			arq="${workdir}/pag#1"
-			todas="${url_dados}&curpage=[2-${ult_pag}]"
+			todas="${url}&curpage=[2-${ult_pag}]"
 			curl --compressed -s -o "$arq" "$todas"
 			test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 			;;
@@ -106,7 +114,7 @@ if [ ${baixados:-0} -lt ${ult_pag:-1} ]
 then
 	echo
 	echo "AVISO: o número de páginas baixadas é menor que o total de páginas disponíveis no site."
-	read -p "Continuar? [Enter=Sim / Ctrl-C=Não]"
+	read -p "Continuar? [Enter=Sim / Ctrl-C=Não]" r
 fi
 
 #obtendo cache da lista de locais pra agilizar o processo
@@ -116,12 +124,6 @@ test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 ult_idlocal=$(tail -n1 "$arq3")
 ult_idlocal=${ult_idlocal%%;*}
 prox_idlocal=$(( ult_idlocal + 1 )) #proximo valor de ID pra tabela LOCAIS
-
-#fazendo backup da base de dados
-echo -n "Fazendo backup da base atual... "
-rm ${db}.gz 2>/dev/null
-gzip -k --fast ${db}
-test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 
 #preparando arquivo sql
 echo
@@ -135,6 +137,14 @@ for f in $(find ${workdir} -maxdepth 1 -type f)
 do
 	arq="$f"
 	echo -n "Processando arquivo: $arq "
+
+	#verificando se a categoria nao esta vazia
+	grep -m1 'Nenhuma oferta com estes argumentos' $arq >/dev/null 2>&1
+	if [ $? -eq 0 ]
+	then
+		echo ' [VAZIO]'
+		continue
+	fi
 
 	#salvando a parte interessante do arquivo
 	inicio="$(grep -nw -m1 '<tbody>' $arq)"
@@ -162,7 +172,7 @@ do
 	#processamento a tabela da pagina
 	while read i
 	do
-		i2="${i#"${i%%[![:space:]]*}"}" #trim leading spaces
+		i2="${i#"${i%%[![:space:]]*}"}" #trim
 
 		if [ "${i2:0:3}" == "<tr" ]
 		then
@@ -187,7 +197,7 @@ do
 				(( prox_idlocal++ ))
 			fi
 
-			echo "$sql_insert into produtos (id, fabricante, nome) values ($idprod, '$fabricante', '$produto');" >> "$sql"
+			echo "$sql_insert into produtos (id, categoria, fabricante, nome, favorito) values ($idprod, '${categ_id:-0}', '$fabricante', '$produto', 'N');" >> "$sql"
 			echo "$sql_insert into lojas (id, nome, local) values ('$idloja', '$loja', '$idlocal');" >> "$sql"
 			echo "$sql_insert into precos (produto, loja, data, valor_num, valor_str) values ($idprod, '$idloja', '$quando', '$preco', '$precof');" >> "$sql"
 
@@ -204,7 +214,8 @@ do
 			case $col in
 				2) 
 				   cont2=${cont2#*>}
-				   fabricante=${cont2%<*} ;;
+				   fabricante=${cont2%<*}
+				   fabricante="${fabricante#"${fabricante%%[![:space:]]*}"}" ;;
 
 				3) 
 				   produto=${cont2%%<*}
@@ -272,3 +283,5 @@ rm "$arq2"
 rm "$arq3"
 rm "$sql"
 rm -f ${workdir}/* >/dev/null 2>&1
+echo
+echo "Concluído."

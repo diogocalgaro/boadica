@@ -1,39 +1,42 @@
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
+CREATE TABLE configuracoes (
+    item TEXT PRIMARY KEY NOT NULL,
+    valor TEXT NOT NULL
+);
+CREATE TABLE locais (
+    id INTEGER PRIMARY KEY NOT NULL,
+    nome TEXT NOT NULL,
+    consultar TEXT  DEFAULT ('N')
+);
+CREATE TABLE lojas (
+    id TEXT PRIMARY KEY NOT NULL,
+    nome TEXT,
+    local INTEGER DEFAULT (0),
+    foreign key (local) references locais (id)
+);
+CREATE TABLE categorias (
+    id INTEGER PRIMARY KEY NOT NULL,
+    nome TEXT NOT NULL,
+    url TEXT NOT NULL
+);
+CREATE TABLE produtos (
+    id INTEGER PRIMARY KEY NOT NULL,
+    categoria INTEGER NOT NULL,
+    fabricante TEXT NOT NULL,
+    nome TEXT NOT NULL,
+    favorito TEXT DEFAULT ('N'),
+    foreign key (categoria) references categorias (id)
+);
 CREATE TABLE precos (
 	produto integer not null,
-	loja varchar not null,
+	loja text not null,
 	data date not null,
 	valor_num decimal(10,2),
 	valor_str text,
 	primary key(produto, loja, data),
 	foreign key (produto) references produtos(id),
 	foreign key (loja) references lojas(id)
-);
-CREATE TABLE lojas (
-    id VARCHAR NOT NULL,
-    nome VARCHAR,
-    local INTEGER DEFAULT (0),
-    primary key (id),
-    foreign key (local) references locais (id)
-);
-CREATE TABLE locais (
-    id INTEGER NOT NULL,
-    nome TEXT NOT NULL,
-    consultar TEXT  DEFAULT ('N'),
-    primary key (id)
-);
-CREATE TABLE produtos (
-    id INTEGER NOT NULL,
-    fabricante VARCHAR,
-    nome VARCHAR,
-    favorito TEXT DEFAULT ('N'),
-    primary key (id)
-);
-CREATE TABLE "configuracoes" (
-    "item" TEXT NOT NULL,
-    "valor" TEXT NOT NULL,
-    primary key (item)
 );
 CREATE VIEW "tb_lojas" AS select l.id, l.nome, o.nome as localizacao
 from lojas l
@@ -68,25 +71,6 @@ substr(nome || '                                                  ', 1, 50) || '
 favorito
 from produtos
 order by nome, fabricante, id*1.0;
-CREATE VIEW "vw_obter_estatisticas" AS
-select 'Produtos: '||count(*) as "Info" from produtos
-union all
-select 'Produtos favoritos: '||count(*) from produtos where favorito='S'
-union all
-select 'Lojas: '||count(*) from lojas
-union all
-select 'Locais: '||count(*) from locais
-union all
-select 'Locais visíveis: '||count(*) from locais where consultar='S'
-union all
-select 'Preços: '||count(*) from precos
-union all
-select 'Dia(s): '||count(*)||' dias com dados carregados' from (
-	select data from precos
-	group by 1
-)
-union all
-select 'Carga de dados mais recente: '||max(data) from precos;
 CREATE VIEW "tb_precos_ultimo_valor" AS
 select produto, loja, valor, max(data) as data
 from (
@@ -125,8 +109,8 @@ CREATE INDEX precos_idx4 on precos (valor_num);
 CREATE INDEX lojas_idx1 on lojas (local);
 CREATE INDEX locais_idx1 on locais (nome);
 CREATE VIEW "vw_diferenca_preco" AS
-select 
-p.fabricante as "Fabricante", p.nome as "Item", 
+select
+p.fabricante as "Fabricante", p.nome as "Item",
 q0.valor_str as "Valor Atual", strftime('%d/%m', q0.data) as "Dt Nova",
 q0.valor_str2 as "Valor Anterior", strftime('%d/%m', q0.data2) as "Dt Anterior",
 q0.diferenca as "Diferenca", l.nome as "Loja"
@@ -151,7 +135,7 @@ order by q0.diferenca, q0.valor_num, p.nome, l.nome;
 CREATE VIEW "vw_melhores_ofertas" AS
 select p.fabricante as "Fabricante", p.nome as "Item", l.nome as "Loja", r2.preco
 from (
-	select r.produto, r.loja, r.valor_str as preco, min(r.valor_num) 
+	select r.produto, r.loja, r.valor_str as preco, min(r.valor_num)
 	from precos r
 	where r.data = current_date and
 	r.valor_num between (select valor*1.0 from configuracoes where item = 'oferta_valor_min') and (select valor*1.0 from configuracoes where item = 'oferta_valor_max')
@@ -167,15 +151,37 @@ from produtos p
 inner join precos r on (r.produto = p.id)
 inner join lojas l on (l.id = r.loja)
 inner join locais o on (o.id = l.local)
-where o.consultar = 'S' 
+where o.consultar = 'S'
 group by 1,2, 3, 4
 order by p.id, l.nome, r.data desc;
 CREATE VIEW "vw_buscar_item_ultimo_preco_2col" AS
 select id, substr(fabricante||'               ',1,15)||'  '||substr(produto||'                                      ',1,38)||'  '||substr(loja||'                  ',1,18)||'  '||substr('      '||replace(preco,',','.'),-6,6)||'  '||strftime('%d/%m',data) as descricao, produto
 from vw_buscar_item_ultimo_preco
 order by id, numero;
+CREATE VIEW "vw_obter_estatisticas" AS
+select 'Categorias: '||count(*) as "Info" from categorias
+union all
+select 'Produtos: '||count(*) from produtos
+union all
+select 'Produtos favoritos: '||count(*) from produtos where favorito='S'
+union all
+select 'Lojas: '||count(*) from lojas
+union all
+select 'Locais: '||count(*) from locais
+union all
+select 'Locais visíveis: '||count(*) from locais where consultar='S'
+union all
+select 'Preços: '||count(*) from precos
+union all
+select 'Dia(s): '||count(*)||' dias com dados carregados' from (
+	select data from precos
+	group by 1
+)
+union all
+select 'Carga de dados mais recente: '||max(data) from precos;
 INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');
-INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '1.00');
+INSERT INTO categorias (id, nome, url) VALUES ('0', 'Desconhecida', '/pesquisa/precos');
+INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '2.0');
 INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');
 INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_max', '100');
 COMMIT;
