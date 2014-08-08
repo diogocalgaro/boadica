@@ -16,9 +16,11 @@ $ git clone "https://github.com/diogocalgaro/boadica.git"
 =====
 
 
-Requisitos: whiptail 0.52, sqlite 3.6, bash 4.1
+Requisitos: dialog 1.2, sqlite 3.6, bash 4.1
 
-Testado no: Fedora 20 (ambiente de testes principal), Ubuntu 14.04, CentOS 7, Mint 17
+Testado no: Fedora 20 (ambiente de testes principal)
+
+Futuramente testado no: Ubuntu 14.04, CentOS 7, Mint 17
 
 
 =====
