@@ -1,5 +1,7 @@
 gerar_backup.sh
 dados.sqlite3.gz
 publicar.sh
+trace.log
 db
 workdir
+testing

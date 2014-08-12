@@ -44,63 +44,113 @@ do
 		
 	case "$op" in
 		"P") #produtos
-			prod_filtro=1
-			categ_filtro_item=''
-			prod_filtro_txt="Ver todos os produtos (DESATIVAR TODOS OS FILTROS)"
+			#exibindo o filtro de categorias logo no começo
+			i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
+			eval "categ=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
+
+			if [ $? -eq 0 ]
+			then
+				categ=${categ// /,}
+				sqlite3 ${db} "update categorias set consultar = 'N'; update categorias set consultar = 'S' where id in (${categ});"
+			else
+				continue
+			fi
+
 			op2=""
+			sql_where=""
+
+			#configuracao de faixa de valores pra melhores ofertas
+			val_min="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_min';")"
+			val_max="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_max';")"
 
 			while [ "$op2" != "V" ]
 			do
-				prod_filtro_sql="where c.id in (${categ_filtro_item}-1)"
-
-				i=$(sqlite3 -list -separator " " ${db} "select quote(c.id||';'||p.id), quote('['||c.nome||']  '||p.fabricante||'  -  '||p.nome) from produtos p inner join categorias c on (c.id = p.categoria) ${prod_filtro_sql} order by c.nome, p.fabricante, p.nome ${sql_limit};")
+				sql="select item, descricao from vw_lista_preco ${sql_where} ${sql_limit}"
+				echo "${sql}" >> trace.log #rem
+				i=$(sqlite3 -list -separator " " ${db} "${sql}")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
 
 				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
 					--menu 'Produtos' 30 90 23 \
 					V 'Voltar' \
-					B 'Buscar por uma produto' \
-					T '"${prod_filtro_txt}"' \
-					F 'Editar filtro de categorias visíveis' \
+					B 'Buscar por um produto' \
+					T 'Ver todos' \
+					O 'Somente melhores ofertas (${val_min} a ${val_max})' \
+					N 'Somente novidades' \
+					F 'Somente favoritos' \
+					S 'Trocar seleção de categorias visíveis' \
 					'' '==============================================================================' \
 					${i})"
 
 				case "$op2" in
+					"V") #voltar
+						break ;;
 					"B") #busca
 						eval "pesq=\$(dialog --stdout --title 'Consultar produto' --inputbox 'Informe o nome do fabricante ou do produto' 8 60)"
 						if [ $? -eq 0 -a -n "$pesq" ]
 						then
-							prod_filtro=1
-							categ_filtro_item='-1'
-							prod_filtro_txt="Ver todos os produtos (DESATIVAR TODOS OS FILTROS)"
-							prod_filtro_sql="where c.id in (${categ_filtro_item}-1) and (p.fabricante like '%{pesq}%' or p.nome like '%{pesq}%')"
+							sql_where="where (fabricante like '%${pesq}%' or prod_nome like '%${pesq}%')"
 						fi ;;
-					"T") #ver todos
-						if [ $prod_filtro -eq 1 ]
-						then
-							prod_filtro=0
-							categ_filtro_item='-1'
-							prod_filtro_txt="Ver somente os produtos das categorias selecionadas (ATIVAR FILTRO DE CATEGORIA)"
-							prod_filtro_sql=""
-						else
-							prod_filtro=1
-							categ_filtro_item='-1'
-							prod_filtro_txt="Ver todos os produtos (DESATIVAR TODOS OS FILTROS)"
-							prod_filtro_sql="where c.id in (${categ_filtro_item}-1)'"
-						fi ;;
-					"F") #filtro
+					"T") #todos
+						sql_where='' ;;
+					"O") #melhores ofertas
+						sql_where="where (valorf between ${val_min} and ${val_max})" ;;
+					"N") #novidades
+						sql_where="where (prod_id in (select produto from vw_novos_produtos))" ;;
+					"F") #favoritos
+						sql_where="where (favorito = 'S')" ;;
+					"S") #filtro seleção de categorias
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, 'off' as opcao from categorias where id <> '0' order by 2 ${sql_limit}" | tr '\n' ' ')
-						cod=""
-						eval "cod=\$(dialog --stdout --checklist 'Categorias visíveis' 30 60 23 ${i})"
-		
-						if [ $? -eq 0 ]
-						then
-							cod=${cod// /,}
-							test -n "${cod}" && cod=${cod}','
-							categ_filtro_item="${cod}"
-						fi
-					;;
+						eval "categ2=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
+						test $? -eq 0 && categ=${categ2// /,} ;;
+					*)
+						while true
+						do
+							categ_id=${op2%;*}
+							prod_id=${op2#*;}
+							tmp=$(mktemp)
+							tmpf=$(mktemp)
+							prim=1
+
+							sqlite3 -csv -separator "|" ${db} "select * from vw_produto where prod_id = '${prod_id}' and categ_id = '${categ_id}';" | while read r
+							do
+								r=${r//\"}
+								IFS=$'|' read prod_id fabricante prod_nome favorito categ_id categ_nome loja_id loja_nome data valorf valor <<< "${r}"
+								
+								if [ ${prim:-1} -eq 1 ]
+								then
+									echo "Categoria: [${categ_id}] ${categ_nome}" >> $tmp
+									echo "Produto: [${prod_id}] ${fabricante} - ${prod_nome}" >> $tmp
+									echo "Favorito: ${favorito}" >> $tmp
+									echo >> $tmp
+									echo "=====================================================" >> $tmp
+
+									#sql pra setar o favorito
+									test ${favorito:-N} == 'S' && fav='N' || fav='S'
+									echo "update produtos set favorito = '${fav}' where id = '${prod_id}' and categoria = '${categ_id}';" > $tmpf
+
+									prim=0
+								fi
+							
+								if [ "${data}" != "${old_data:-x}" ]
+								then
+									echo >> $tmp
+									echo -n "${data}: " >> $tmp
+									old_data="${data}"
+								else
+									echo -n "            " >> $tmp
+								fi
+								printf "%-*s" 30 "${loja_nome}" >> $tmp
+								printf "%*s" 10 "R\$ ${valor}" >> $tmp
+								echo >> $tmp
+							done
+
+							dialog --title 'Informações do produto' --extra-button --extra-label 'Favoritar' --exit-label 'Ok' --textbox "${tmp}" 50 90
+							test $? -eq 3 && sqlite3 ${db} ".read $tmpf" || break
+							rm ${tmp}
+							rm ${tmpf}
+						done ;;
 				esac
 			done ;;
 		"L") #lojas
@@ -211,208 +261,12 @@ do
 			${base}/atualizar_todas.sh ;;
 		"E")
 			tmp="$(mktemp)"
-			sqlite3 -cmd ".width 48" -header -column $db "select * from vw_obter_estatisticas;" > "$tmp"
+			sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"
 			dialog --title "Estatísticas da base de dados" --textbox $tmp 16 60
 			rm "$tmp" ;;
 		"A")
 			dialog --title "Sobre..." --textbox ${base}/ABOUT.md 25 60 ;;
 	esac
-
-
-done
-
-tput clear
-
-exit 0
-#############################################################################
-
-#laço principal
-while [ "$op" != "S" ]
-do
-	#menu principal
-	op=$(whiptail --title "Busca Boadica ${versao} (Categoria: ${categ})" \
-		--menu "Menu principal" 25 60 16 \
-		B " Buscar item em todas as lojas" \
-		I " Consultar itens de uma loja" \
-		D " Consultar diferenças de preço" \
-		L " Consultar informações de uma loja" \
-		O " Consultar melhores ofertas" \
-		N " Consultar novidades" \
-		T " Listar todos os itens" \
-		F " Acompanhar favoritos" \
-		"" " =================================" \
-		C " Carregar dados de hoje..." \
-		E " Estatísticas da base de dados"  \
-		"" " =================================" \
-		V " Configurar localidades visíveis" \
-		P " Configurar produtos favoritos" \
-		"" " =================================" \
-		S " Sair" 3>&2 2>&1 1>&3)
-
-	if [ $? -ne 0 ]
-	then
-		break
-	fi
-
-	#ações do menu principal
-	if [ "$op" == "B" ]
-	then
-		p=$(whiptail --title "Buscar item" --inputbox "Informe as palavras para pesquisa do item" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)
-		if [ $? -eq 0 -a -n "$p" ]
-		then
-			cod=""
-			i=$(sqlite3 -csv $db "select id, descricao from vw_buscar_item_ultimo_preco_2col where produto like '%${p}%';" | tr '\n' ' ' | tr ',' ' ')
-			i="${i} ' ' ' ' Voltar =============================="
-
-			while [ "$cod" != "Voltar" ]
-			do
-				eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Produtos encontrados' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)"
-
-				if [ "$cod" != "Voltar" ]
-				then
-					$base/criar_grafico.sh $cod
-				fi
-			done
-		fi
-	elif [ "$op" == "I" ]
-	then
-		p=$(whiptail --title "Consultar itens" --inputbox "Informe o nome da loja" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)
-		if [ $? -eq 0 -a -n "$p" ]
-		then
-			tmp=$(mktemp)
-			sqlite3 -cmd ".width 20 35 8 17 10" -header -column $db "select * from vw_buscar_por_loja where Loja like '%${p}%';" > $tmp
-			whiptail --title "Consultar itens da loja" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
-			rm $tmp
-		fi
-	elif [ "$op" == "C" ]
-	then
-		echo "Executando rotina de carga dos dados..."
-		$base/obter_dados.sh
-	elif [ "$op" == "D" ]
-	then
-		tmp=$(mktemp)
-		sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column $db "select * from vw_diferenca_preco;" > $tmp
-		whiptail --title "Diferenças de preço" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
-		rm $tmp
-	elif [ "$op" == "O" ]
-	then
-		cod=""
-		val_min="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_min';")"
-		val_max="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_max';")"
-
-		while [ "$cod" != "Voltar" ]
-		do
-			eval "cod=\$(whiptail --notags --menu 'Menu melhores ofertas' $alt_jan_md $larg_jan_md $menu_jan_md Ver \"Ver listagem das melhores ofertas\" Min \"[Config] Valor mínimo = $val_min\" Max \"[Config] Valor máximo = $val_max\" Voltar \"Voltar ====================\" 3>&2 2>&1 1>&3)"
-
-			if [ "$cod" == "Ver" ]
-			then
-				tmp=$(mktemp)
-				sqlite3 -cmd ".width 18 48 20 8" -header -column $db "select * from vw_melhores_ofertas;" > $tmp
-				whiptail --title "Lista das melhores ofertas" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
-				rm $tmp
-				cod="Voltar" #voltar direto pro menu principal
-			elif [ "$cod" == "Min" ]
-			then
-				v="$(whiptail --title "Configuração" --inputbox "Indique o valor mínimo:" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)"
-				val_min="${v:-0}"
-				sqlite3 $db "update configuracoes set valor='$val_min' where item='oferta_valor_min';"
-			elif [ "$cod" == "Max" ]
-			then
-				v="$(whiptail --title "Configuração" --inputbox "Indique o valor máximo:" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)"
-				val_max="${v:-0}"
-				sqlite3 $db "update configuracoes set valor='$val_max' where item='oferta_valor_max';"
-			fi
-		done
-	elif [ "$op" == "N" ]
-	then
-		tmp=$(mktemp)
-		sqlite3 -cmd ".width 18 48 20 8" -header -column $db "select * from vw_novidades;" > $tmp
-		whiptail --title "Novidades" --scrolltext --textbox $tmp $alt_jan_gr $larg_jan_gr
-		rm $tmp
-	elif [ "$op" == "L" ]
-	then
-		l=$(whiptail --title "Consultar Loja" --inputbox "Informe o nome da loja" $alt_jan_pq $larg_jan_pq 3>&2 2>&1 1>&3)
-		if [ $? -eq 0 -a -n "$l" ]
-		then
-			i=$(sqlite3 -csv $db "select id, nome||' ('||localizacao||')' as item from tb_lojas where nome like '%${l}%';" | tr '\n' ' ' | tr ',' ' ')
-
-			eval "cod=\$(whiptail --notags --menu 'Selecione a loja' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)"
-			if [ -n "$cod" ]
-			then
-				naveg_cmd="$(which $naveg_opcoes xdg-open 2>/dev/null | head -n1)"
-				$naveg_cmd "${pag_vendedor}${cod}" >/dev/null 2>&1 &
-			fi
-		fi
-	elif [ "$op" == "E" ]
-	then
-		tmp=$(mktemp)
-		sqlite3 -cmd ".width 48" -header -column $db "select * from vw_obter_estatisticas;" > $tmp
-		whiptail --title "Estatísticas da base de dados" --textbox $tmp $alt_jan_md $larg_jan_md
-		rm $tmp
-	elif [ "$op" == "T" ]
-	then
-		cod=""
-		i="Voltar ============================== ' ' ' '"
-		j=$(sqlite3 -csv $db "select id, item from vw_obter_lista_produtos;" | tr '\n' ' ' | tr ',' ' ')
-		i="${i} ${j} ' ' ' ' Voltar =============================="
-
-		while [ "$cod" != "Voltar" ]
-		do
-			eval "cod=\$(whiptail --default-item "${cod:-0}" --nocancel --menu 'Todos os produtos' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)"
-
-			if [ "$cod" != "Voltar" ]
-			then
-				$base/criar_grafico.sh $cod
-			fi
-		done
-	elif [ "$op" == "F" ]
-	then
-		cod=""
-		i=$(sqlite3 -csv $db "select id, substr(descricao,1,$col_jan_gr) from vw_buscar_favorito_id;" | tr '\n' ' ' | tr ',' ' ')
-		i="${i} ' ' ' ' Voltar 'Voltar =============================='"
-
-		while [ "$cod" != "Voltar" ]
-		do
-			eval "cod=\$(whiptail --default-item "${cod:-0}" --notags --nocancel --menu 'Favoritos' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)"
-
-			if [ "$cod" != "Voltar" ]
-			then
-				$base/criar_grafico.sh $cod
-			fi
-		done
-	elif [ "$op" == "V" ]
-	then
-		cod=""
-		i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 1" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
-		eval "cod=\"\$(whiptail --checklist 'Locais visíveis' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)\""
-		
-		if [ "$?" -eq 0 ]
-		then
-			cod="$(echo $cod | sed 's/ /,/g;s/"//g')"
-			sql="update locais set consultar = 'N'; update locais set consultar='S' where id in (${cod});"
-			sqlite3 $db "$sql"
-		fi
-
-		sql="select count(*) from locais where consultar='S';"
-		res=$(sqlite3 $db "$sql")
-		whiptail --msgbox "Localidades incluídas nas pesquisas: ${res:-0}" $alt_jan_pq $larg_jan_pq
-	elif [ "$op" == "P" ]
-	then
-		cod=""
-		i=$(sqlite3 -csv -separator " " $db "select id, item, favorito from vw_obter_lista_produtos;" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
-		eval "cod=\"\$(whiptail --checklist 'Produtos favoritos' $alt_jan_gr $larg_jan_gr $menu_jan_gr ${i} 3>&2 2>&1 1>&3)\""
-
-		if [ "$?" -eq 0 ]
-		then
-			cod="$(echo $cod | sed 's/ /,/g;s/"//g')"
-			sql="update produtos set favorito = 'N'; update produtos set favorito='S' where id in (${cod});"
-			sqlite3 $db "$sql"
-		fi
-
-		sql="select count(*) from produtos where favorito='S';"
-		res=$(sqlite3 $db "$sql")
-		whiptail --msgbox "Produtos favoritos: ${res:-0}" $alt_jan_pq $larg_jan_pq
-	fi
 done
 
 tput clear

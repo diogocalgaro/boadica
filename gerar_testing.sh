@@ -21,23 +21,28 @@ then
 fi
 
 #apagando arquivos antigos
-rm -rf distrib/*
+if [ -d testing ]
+then
+	rm -rf testing/*
+else
+	mkdir testing
+fi
 
 #copiando arquivos novos
 echo "Copiando arquivos:"
-cp -v boadica.sh config.inc funcoes.inc dados.dump obter_dados.sh criar_grafico.sh setup.sh incluir_categoria.sh atualizar_todas.sh  distrib/
-touch distrib/"$(basename $arq_svg)"
+cp -v boadica.sh config.inc funcoes.inc dados.dump obter_dados.sh criar_grafico.sh setup.sh incluir_categoria.sh atualizar_todas.sh  testing/
+touch testing/"$(basename $arq_svg)"
 
 #removendo categoria padrao
-sed -i '/^instalado/d' distrib/config.inc
-echo 'instalado="N"' >> distrib/config.inc
+sed -i '/^instalado/d' testing/config.inc
+echo 'instalado="N"' >> testing/config.inc
 
 #gerar arquivo compactado pra distribuicao (parametro "-zip")
 if [ "$1" == "-zip" ]
 then
 	z="script-boadica-${versao}.tar.gz"
 	rm "$z" > /dev/null 2>&1
-	tar czvf "$z" distrib/*
+	tar czvf "$z" testing/*
 	chmod 666 "$z"
 	echo
 	echo "Criado $z"
