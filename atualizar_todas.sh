@@ -10,7 +10,7 @@ source ${base}/funcoes.inc
 backup_db
 
 #obtendo as categorias cadastradas
-sqlite3 ${db} "select * from categorias where id <> '0' order by id;" | while read i
+sqlite3 ${db} "select id, nome, url from categorias where id <> '0' order by id;" | while read i
 do
 	id=${i%%|*}
 	nome=${i%|*}

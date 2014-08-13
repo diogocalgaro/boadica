@@ -3,9 +3,6 @@
 #config basica
 source $(dirname $0)/config.inc
 
-#config local
-max_pags=99 #numero maximo de paginas pra processar por categoria
-
 #funcoes
 source ${base}/funcoes.inc
 

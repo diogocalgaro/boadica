@@ -1,7 +1,9 @@
-gerar_backup.sh
+x_gerar_backup.sh
+x_teste.sh
+x_publicar.sh
 dados.sqlite3.gz
-publicar.sh
 trace.log
 db
 workdir
-testing
+teste
+remover

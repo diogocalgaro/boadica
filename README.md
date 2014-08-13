@@ -2,7 +2,7 @@ boadica
 =======
 
 
-Script em Bash para cache e consultas a uma categoria do site do Boa Dica.
+Script em Bash para cache e consultas à função 'Pesquisa de Preços' do site Boa Dica.
 
 
 =====
@@ -25,6 +25,7 @@ Futuramente testado no: Ubuntu 14.04, CentOS 7, Mint 17
 
 =====
 
+A base de dados já vem carregada com dados.
 
 A pasta criada pelo git-clone contém, na raiz, a versão de desenvolvimento já configurada e carregada com os dados da categoria "Jogos PS3". Para utilizar uma versão limpa, sem dados nem categoria pré-definida, utilize a cópia da pasta "distrib".
 

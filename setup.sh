@@ -4,10 +4,7 @@
 source $(dirname $0)/config.inc
 
 #verificando se ja foi instalado
-if [ "${instalado:-N}" == "S" ]
-then
-	exit 0
-fi
+test ${instalado:-N} == "S" && exit 0
 
 #funcoes
 source ${base}/funcoes.inc
@@ -26,13 +23,6 @@ which dialog > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
 	fatal "Dependência não encontrada: dialog"
-fi
-
-#resize
-which resize > /dev/null 2>&1
-if [ $? -ne 0 ]
-then
-	fatal "Dependência não encontrada: resize (pacote xterm)"
 fi
 
 #gzip
@@ -92,29 +82,7 @@ fi
 
 if [ ! -s "${db}" ]
 then
-	#confirmacao
-	dialog --title "Setup" --yesno "Não foi encontrado o arquivo de banco de dados.\nDeseja criá-lo agora?" 8 60
-	if [ $? -ne 0 ]
-	then
-		fatal "Não é possível continuar sem uma base de dados disponível..."
-	fi
-
-	#verificando sqls de criacao da base
-	if [ -f "$dump" ]
-	then
-		#criando nova base de dados
-		rm "$db" 2> /dev/null
-		sqlite3 -bail "$db" ".read ${dump}"
-
-		if [ $? -eq 0 ]
-		then
-			dialog --title "Setup" --msgbox "Base de dados criada com sucesso." 8 60
-		else
-			fatal "Não foi possível criar a base de dados..."
-		fi
-	else
-		fatal "Não foi possível criar a base de dados. Não está disponível o arquivo de dump (${dump})..."
-	fi
+	fatal "Não é foi encontrado o arquivo do banco de dados ${db} ..."
 fi
 
 
@@ -166,19 +134,10 @@ fi
 
 # SAINDO #######################################################################
 
-#sed -i '/^instalado/d' config.inc
-#echo 'instalado="S"' >> config.inc
-
 config="$(grep -v '^instalado' config.inc)"
 config="${config}\ninstalado='S'"
 echo -e "${config}" > config.inc
 if [ $? -ne 0 ]
 then
 	fatal "Falha ao salvar arquivo de configuração..."
-fi
-
-if [ -z "$1" ] #se for rodado diretamente por ./setup.sh
-then
-	echo "Setup concluído com sucesso."
-	echo
 fi

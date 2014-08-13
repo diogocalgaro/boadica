@@ -1,8 +1,10 @@
 #arquivo de configuracoes
 
-#opcoes personalizaveis - ordem de preferencia, itens separados por espaco
+#opcoes personalizaveis
+#ordem de preferencia para os aplicativos de navegador, visualizador de imagens e downloader
+#itens separados por espaco
 naveg_opcoes="google-chrome firefox opera konqueror epiphany midori"
-view_opcoes="inkview ristretto eog gwenview mate-image-viewer feh mirage viewnior xloadimage gimp inkscape"
+view_opcoes="inkview ristretto eog mate-image-viewer feh xloadimage gimp inkscape xdg-open"
 dw_opcoes="curl aria2c wget"
 
 #itens fixos - nao alterar
@@ -16,4 +18,6 @@ db="$base/$dbname"
 dump="$base/dados.dump"
 arq_svg="$base/out.svg"
 workdir="$base/workdir"
-instalado="S"
+sql_limit="limit 500"
+max_pags=200
+instalado="N"

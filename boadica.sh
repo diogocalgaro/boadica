@@ -8,16 +8,11 @@
 ################################################################################
 
 #verificando a instalacao
-$(dirname $0)/setup.sh x #se o script receber algum parametro ele sabe que foi chamado por outro script
+$(dirname $0)/setup.sh
 test $? -ne 0 && exit $?
 
-#config basica
+#dependencias
 source $(dirname $0)/config.inc
-
-#config local
-sql_limit="limit 1000" #maximo de resultado numa query sql
-
-#funcoes
 source ${base}/funcoes.inc
 
 #laco principal
