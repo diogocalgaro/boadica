@@ -1,10 +1,8 @@
 #!/bin/bash
 
-#config basica
-source $(dirname $0)/config.inc
-
-#funcoes
-source ${base}/funcoes.inc
+#dependencias
+source $(dirname $0)/_config.inc
+source ${base}/_funcoes.inc
 
 #backup do banco de dados
 backup_db
@@ -24,7 +22,7 @@ do
 	echo
 	tput sgr0
 
-	${base}/obter_dados.sh "${id}" "${url}"
+	${base}/_download.sh "${id}" "${url}"
 
 	echo
 	echo "------------------------------"

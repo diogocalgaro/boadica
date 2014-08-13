@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #config basica
-source $(dirname $0)/config.inc
+source $(dirname $0)/_config.inc
 
 #verificando se ja foi instalado
 test ${instalado:-N} == "S" && exit 0
 
 #funcoes
-source ${base}/funcoes.inc
+source ${base}/_funcoes.inc
 
 
 # VERIFICANDO DEPENDENCIAS ####################################################
@@ -103,7 +103,7 @@ fi
 
 if [ ${op:-S} == 'S' ]
 then
-	${base}/incluir_categoria.sh
+	${base}/_categoria.sh
 
 	#conferindo se realmente tem alguma categoria
 	if [ ${inseridas:-0} -eq 0 ]
@@ -127,16 +127,16 @@ then
 	if [ $? -eq 0 ]
 	then
 		echo "Executando rotina de carga dos dados..."
-		$base/atualizar_todas.sh
+		$base/_atualizar.sh
 	fi
 fi
 
 
 # SAINDO #######################################################################
 
-config="$(grep -v '^instalado' config.inc)"
+config="$(grep -v '^instalado' _config.inc)"
 config="${config}\ninstalado='S'"
-echo -e "${config}" > config.inc
+echo -e "${config}" > _config.inc
 if [ $? -ne 0 ]
 then
 	fatal "Falha ao salvar arquivo de configuração..."

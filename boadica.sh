@@ -8,12 +8,12 @@
 ################################################################################
 
 #verificando a instalacao
-$(dirname $0)/setup.sh
+$(dirname $0)/_setup.sh
 test $? -ne 0 && exit $?
 
 #dependencias
-source $(dirname $0)/config.inc
-source ${base}/funcoes.inc
+source $(dirname $0)/_config.inc
+source ${base}/_funcoes.inc
 
 #laco principal
 op="P"
@@ -61,7 +61,6 @@ do
 			while [ "$op2" != "V" ]
 			do
 				sql="select item, descricao from vw_lista_preco ${sql_where} ${sql_limit}"
-				echo "${sql}" >> trace.log #rem
 				i=$(sqlite3 -list -separator " " ${db} "${sql}")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
@@ -230,15 +229,15 @@ do
 					${i})"
 
 				case "$op2" in
-					"I") ${base}/incluir_categoria.sh ;;
-					"T") ${base}/atualizar_todas.sh ;;
+					"I") ${base}/_categoria.sh ;;
+					"T") ${base}/_atualizar.sh ;;
 					[0-9]*)
 						n=$(sqlite3 ${db} "select count(*) from produtos p inner join categorias c on (c.id = p.categoria) where c.id = '${op2}';")
 						dialog --extra-button --extra-label "Remover" --ok-label "Ok" --cancel-label "Atualizar" --yesno "Essa categoria possui ${n} produto(s) cadastrado(s)." 7 60
 						case $? in
 							1) #atualizar
 								backup_db
-								${base}/obter_dados.sh "$op2" ;;
+								${base}/_download.sh "$op2" ;;
 							3) #remover
 								dialog --yesno "Tem certeza que deseja remover essa categoria e todos os seu produtos e preços cadastrados?" 10 60
 								if [ $? -eq 0 ]
@@ -253,7 +252,7 @@ do
 				esac
 			done ;;
 		"H")
-			${base}/atualizar_todas.sh ;;
+			${base}/_atualizar.sh ;;
 		"E")
 			tmp="$(mktemp)"
 			sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"

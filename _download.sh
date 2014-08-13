@@ -1,10 +1,8 @@
 #!/bin/bash
 
-#config basica
-source $(dirname $0)/config.inc
-
-#funcoes
-source ${base}/funcoes.inc
+#dependencias
+source $(dirname $0)/_config.inc
+source ${base}/_funcoes.inc
 
 #parametros
 categ_id="${1}" #id da categoria (obrigatorio)

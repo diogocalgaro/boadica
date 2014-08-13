@@ -1,23 +1,21 @@
 #!/bin/bash
 
-#config basica
-source $(dirname $0)/config.inc
+#dependencias
+source $(dirname $0)/_config.inc
+source ${base}/_funcoes.inc
 
 #verificacoes
 prod_id="$1"
 if [ -z "${prod_id}" ]
 then
-	echo "Erro: o ID do produto não foi informado..."
-	exit 1
+	fatal "o ID do produto não foi informado..."
 fi
-
 if [ -z "${arq_svg}" ]
 then
-	echo "Erro: arquivo de saída de imagem não encontrado..."
-	exit 1
+	fatal "Erro: arquivo de saída de imagem não encontrado..."
 fi
 
-#config
+#config local
 limx=600
 limy=500
 zerox=25
@@ -105,7 +103,6 @@ rm "$arq2"
 view_cmd="$(which $view_opcoes 2>/dev/null | head -n1)"
 if [ -z "${view_cmd}" ]
 then
-        echo "ERRO: Não foi possível encontrar um programa para abrir .svg"
-	exit 1
+        fatal "ERRO: Não foi possível encontrar um programa para abrir .svg"
 fi
 ${view_cmd} ${arq_svg}
