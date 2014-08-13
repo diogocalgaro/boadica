@@ -73,6 +73,7 @@ do
 					O 'Somente melhores ofertas (${val_min} a ${val_max})' \
 					N 'Somente novidades' \
 					F 'Somente favoritos' \
+					D 'Consultar variações nos preços...' \
 					S 'Trocar seleção de categorias visíveis' \
 					'' '==============================================================================' \
 					${i})"
@@ -94,6 +95,11 @@ do
 						sql_where="where (prod_id in (select produto from vw_novos_produtos))" ;;
 					"F") #favoritos
 						sql_where="where (favorito = 'S')" ;;
+					"D") #diferenças/variações nos preços
+						tmp=$(mktemp)
+						sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column $db "select * from vw_diferencas_preco;" > $tmp
+						dialog --title "Variações nos preços" --textbox $tmp 50 108
+						rm ${tmp} ;;
 					"S") #filtro seleção de categorias
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, 'off' as opcao from categorias where id <> '0' order by 2 ${sql_limit}" | tr '\n' ' ')
 						eval "categ2=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
@@ -122,7 +128,8 @@ do
 
 									#sql pra setar o favorito
 									test ${favorito:-N} == 'S' && fav='N' || fav='S'
-									echo "update produtos set favorito = '${fav}' where id = '${prod_id}' and categoria = '${categ_id}';" > $tmpf
+									echo "-- ${prod_id}" > $tmpf
+									echo "update produtos set favorito = '${fav}' where id = '${prod_id}' and categoria = '${categ_id}';" >> $tmpf
 
 									prim=0
 								fi
@@ -140,8 +147,24 @@ do
 								echo >> $tmp
 							done
 
-							dialog --title 'Informações do produto' --extra-button --extra-label 'Favoritar' --exit-label 'Ok' --textbox "${tmp}" 50 90
-							test $? -eq 3 && sqlite3 ${db} ".read $tmpf" || break
+							#dialog --title 'Informações do produto' --extra-button --extra-label 'Favoritar' --exit-label 'Ok' --textbox "${tmp}" 50 90
+							#test $? -eq 3 && sqlite3 ${db} ".read $tmpf" || break
+							
+							dialog --title 'Informações do produto' --extra-button --extra-label 'Opções' --exit-label 'Ok' --textbox "${tmp}" 50 90
+							if [ $? -eq 3 ]
+							then
+								op3=$(dialog --stdout --no-tags --no-cancel --title 'Produto' --menu 'Opções' 10 36 7 C 'Cancelar' F 'Favoritar' G 'Gráfico de preços')
+								case "${op3}" in
+									"F") sqlite3 ${db} ".read $tmpf" ;;
+									"G") 
+										prod_id="$(head -n1 $tmpf)"
+										prod_id=${prod_id//-- }
+										${base}/_grafico.sh ${prod_id} ;;
+								esac
+							else
+								break
+							fi
+
 							rm ${tmp}
 							rm ${tmpf}
 						done ;;
