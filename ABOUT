@@ -1,0 +1,15 @@
+Projeto Script Boa Dica
+-----------------------
+
+https://github.com/diogocalgaro/boadica
+
+Julho/2014 - Licença MIT
+
+-----------------------
+
+Testado no Fedora 20
+
+bash 4.2.47
+sqlite 3.8.5
+dialog 1.2
+

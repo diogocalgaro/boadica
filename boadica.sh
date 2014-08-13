@@ -61,6 +61,7 @@ do
 
 			while [ "$op2" != "V" ]
 			do
+				aguarde
 				sql="select item, descricao from vw_lista_preco ${sql_where} ${sql_limit}"
 				i=$(sqlite3 -list -separator " " ${db} "${sql}")
 				i=${i//$'\n'/ }
@@ -97,6 +98,7 @@ do
 					"F") #favoritos
 						sql_where="where (favorito = 'S')" ;;
 					"D") #diferenças/variações nos preços
+						aguarde
 						tmp=$(mktemp)
 						sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column $db "select * from vw_diferencas_preco;" > $tmp
 						dialog --title "Variações nos preços" --textbox $tmp 50 108
@@ -108,6 +110,7 @@ do
 					*)
 						while true
 						do
+							aguarde
 							categ_id=${op2%;*}
 							prod_id=${op2#*;}
 							tmp=$(mktemp)
@@ -148,9 +151,6 @@ do
 								echo >> $tmp
 							done
 
-							#dialog --title 'Informações do produto' --extra-button --extra-label 'Favoritar' --exit-label 'Ok' --textbox "${tmp}" 50 90
-							#test $? -eq 3 && sqlite3 ${db} ".read $tmpf" || break
-							
 							dialog --title 'Informações do produto' --extra-button --extra-label 'Opções' --exit-label 'Ok' --textbox "${tmp}" 50 90
 							if [ $? -eq 3 ]
 							then
@@ -179,6 +179,7 @@ do
 
 			while [ "$op2" != "V" ]
 			do
+				aguarde
 				i=$(sqlite3 -list -separator " " ${db} "select id, quote(loja||'   ['||produtos||']') from (select q.id, q.loja, count(distinct p.produto) as produtos from (select l.id, l.nome||',   '||o.nome as loja from lojas l inner join locais o on (o.id = l.local) ${lojas_filtro_sql}) q left join precos p on (p.loja = q.id) group by 1, 2) order by 2 ${sql_limit};")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
@@ -239,6 +240,7 @@ do
 			op2=""
 			while [ "$op2" != "V" ]
 			do
+				aguarde
 				i=$(sqlite3 -list -separator " " ${db} "select id, quote(nome||' ['||total||']') from (select c.id, c.nome, count(p.id) as total from categorias c left join produtos p on (p.categoria = c.id) where c.id <> '0' group by 1, 2 order by c.nome) ${sql_limit};")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
@@ -266,6 +268,7 @@ do
 								dialog --yesno "Tem certeza que deseja remover essa categoria e todos os seu produtos e preços cadastrados?" 10 60
 								if [ $? -eq 0 ]
 								then
+									aguarde
 									sqlite3 ${db} "delete from precos where produto in (select id from produtos where categoria = '$op2');" && \
 									sqlite3 ${db} "delete from produtos where categoria = '$op2';" && \
 									sqlite3 ${db} "delete from categorias where id = '$op2';" && \
@@ -303,6 +306,7 @@ do
 			tmp="$(mktemp)"
 			while true
 			do
+				aguarde
 				sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"
 				dialog --title "Estatísticas da base de dados" --extra-button --extra-label 'Resetar BD' --ok-label 'Ok' --textbox ${tmp} 16 60
 				out=$?
@@ -348,7 +352,11 @@ do
 			done
 			rm "$tmp" ;;
 		"A")
-			dialog --title "Sobre..." --textbox ${base}/ABOUT.md 25 60 ;;
+			dialog --title 'Sobre...' --ok-label 'Fechar' --extra-button --extra-label 'Licença' --textbox ${base}/ABOUT 25 60
+			if [ $? -eq 3 ]
+			then
+				dialog --title 'Licença' --textbox ${base}/LICENSE 30 70
+			fi ;;
 	esac
 done
 

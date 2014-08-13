@@ -9,10 +9,11 @@ arq="$(mktemp)"
 arq2="$(mktemp)"
 arq3="$(mktemp)"
 arq4="$(mktemp)"
+arq5="$(mktemp)"
 dw="$(basename $(which $dw_opcoes 2>/dev/null | head -n1))"
 
 #baixando a pagina
-dialog --title "Setup" --infobox "Obtendo página inicial da pesquisa de preços. Aguarde." 8 60
+dialog --title "Setup" --infobox "Obtendo página inicial da pesquisa de preços. Aguarde." 4 62
 case "$dw" in
 	"curl") curl --compressed -s -o "$arq" "$url_base" ;;
 	"aria2c")
@@ -36,7 +37,7 @@ head -n${linha2} "$arq" | tail -n${dif} | grep '/pesquisa/' | iconv -f "ISO-8859
 num_linhas=$(cat $arq2 | wc -l)
 
 #montando as opcoes pro menu
-dialog --title "Setup" --infobox "Montando o menu de opções..." 8 60
+dialog --title "Setup" --infobox "Montando o menu de opções..." 4 40
 while read i
 do
 	linha="${i%$'\r\n'*}"
@@ -66,15 +67,29 @@ do
 	fi
 
 	desc=${linha#*\|}
-	echo "$cod|$desc|0 " >> "$arq3"
+	echo "$cod|$desc|off " >> "$arq3"
 
 done < "$arq2"
 
 #perguntando a categoria
-urls=""
-while [ -z "$urls" ]
+urls=0
+out=3
+while true # [ -z "$urls" ]
 do
-	eval "urls=\$(dialog --single-quoted --stdout --no-tags --no-cancel --title 'Setup' --checklist 'Selecione a(s) categoria(s) que deseja utilizar' 40 100 28 $(sed ':a;N;$!ba;s/\n/ /g;s/|/ /g' $arq3))"
+	if [ $out -eq 3 ]
+	then
+		if [ -z "${urls}" ]
+		then
+			sed ':a;N;$!ba;s/\n/ /g;s/|/ /g;s/ off/ on/g' ${arq3} > ${arq5}
+		else
+			sed ':a;N;$!ba;s/\n/ /g;s/|/ /g' ${arq3} > ${arq5}
+		fi
+	elif [ $out -eq 0 ]
+	then
+		break
+	fi
+	eval "urls=\$(dialog --single-quoted --stdout --no-tags --no-cancel --extra-button --extra-label 'Todas/Nenhuma' --title 'Setup' --checklist 'Selecione a(s) categoria(s) que deseja utilizar' 40 100 28 $(cat ${arq5}))"
+	out=$?
 done
 
 #inserindo as categorias no banco de dados
@@ -114,7 +129,8 @@ inseridas="$(cat $arq4)"
 dialog --title "Setup" --msgbox "${inseridas:-0} categoria(s) incluída(s) com sucesso." 8 60
 
 #removendo arquivos temporarios
-rm "$arq"
-rm "$arq2"
-rm "$arq3"
-rm "$arq4"
+rm "${arq}"
+rm "${arq2}"
+rm "${arq3}"
+rm "${arq4}"
+rm "${arq5}"

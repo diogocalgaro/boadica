@@ -13,3 +13,7 @@ function backup_db {
 	gzip -k --fast ${db}
 	test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 }
+
+function aguarde {
+	dialog --infobox "Aguarde..." 4 18
+}

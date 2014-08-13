@@ -9,6 +9,13 @@ test ${instalado:-N} == "S" && exit 0
 #funcoes
 source ${base}/_funcoes.inc
 
+#iniciando
+echo
+echo "Script de cache do Boa Dica ${versao}"
+echo
+echo "Bem vindo ao script de setup. Esse script roda apenas na primeira execução e verifica se você possui os requisitos necessários pra execução, além de preparar a configuração inicial."
+echo
+read -p "Pressione [enter] pra continuar" r
 
 # VERIFICANDO DEPENDENCIAS ####################################################
 
@@ -94,7 +101,7 @@ if [ ${existe:-0} -eq 0 ]
 then
 	dialog --title "Setup" --msgbox "Na próxima tela, selecione a(s) categoria(s) do site que você deseja acompanhar. Selecione apenas os subgrupos, não selecione um grupo (eles não podem ser consultados nesse script)." 9 60
 else	
-	dialog --title "Setup" --yesno "Existe(m) ${existe} categoria(s) cadastrada(s) no banco de dados. Deseja adicionar mais alguma?" 8 60
+	dialog --title "Setup" --yesno "Existe(m) ${existe} categoria(s) já cadastrada(s) no banco de dados. Deseja adicionar mais alguma?" 8 60
 	if [ $? -ne 0 ]
 	then
 		op='N'
@@ -141,3 +148,5 @@ if [ $? -ne 0 ]
 then
 	fatal "Falha ao salvar arquivo de configuração..."
 fi
+
+dialog --title 'Setup' --msgbox 'Setup concluído com sucesso' 7 50
