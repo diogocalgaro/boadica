@@ -98,7 +98,7 @@ do
 	existe=$(sqlite3 dados.sqlite3 "select count(*) from categorias where url = '${i}';")
 	if [ ${existe:-0} -eq 0 ]
 	then
-	        sqlite3 "$db" "insert into categorias (nome, url) values('${categ}','${i}');"
+	        sqlite3 "$db" "insert into categorias (nome, url, consultar) values('${categ}', '${i}', 'S');"
 	        if [ $? -eq 0 ]
 	        then
 	                (( inseridas++ ))

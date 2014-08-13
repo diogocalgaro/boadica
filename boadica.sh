@@ -24,12 +24,13 @@ do
 		--stdout                              \
 		--no-cancel                           \
 		--default-item "$op"                  \
-		--menu "Menu principal" 16 45 9       \
+		--menu "Menu principal" 18 45 11      \
 		P "Produtos"                          \
 		L "Lojas"                             \
 		C "Categorias"                        \
 		"" "=============================="   \
 		H "Carregar dados de hoje"            \
+		O "Configurações"		      \
 		E "Estatísticas da base de dados"     \
 		A "Sobre este script"                 \
 		"" "=============================="   \
@@ -276,10 +277,75 @@ do
 			done ;;
 		"H")
 			${base}/_atualizar.sh ;;
+		"O")
+			op2=""
+			tmp=$(mktemp)
+			while true
+			do
+				sqlite3 -list ${db} "select item||'='||quote(valor) from configuracoes;" > ${tmp}
+				source ${tmp}
+				op2=$(dialog --stdout --no-cancel --no-tags --title 'Configurações' --menu 'Parâmetros' 10 80 7 V 'Voltar' 1 "Produtos, melhores ofertas, valor mínimo: ${oferta_valor_min}" 2 "Produtos, melhores ofertas, valor máximo: ${oferta_valor_max}")
+				case "${op2}" in
+					"V") break ;;
+					"1") col="oferta_valor_min" ;;
+					"2") col="oferta_valor_max" ;;
+				esac
+				atual=$(sqlite3 ${db} "select valor from configuracoes where item = '${col}' limit 1")
+				novo=$(dialog --stdout --inputbox 'Informe o novo valor:' 8 50 "${atual}")
+				if [ "${atual}" != "${novo}" ]
+				then
+					sqlite3 ${db} "update configuracoes set valor = '${novo}' where item = '${col}';"
+				fi
+			done
+			rm ${tmp}
+			;;
 		"E")
 			tmp="$(mktemp)"
-			sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"
-			dialog --title "Estatísticas da base de dados" --textbox $tmp 16 60
+			while true
+			do
+				sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"
+				dialog --title "Estatísticas da base de dados" --extra-button --extra-label 'Resetar BD' --ok-label 'Ok' --textbox ${tmp} 16 60
+				out=$?
+				if [ $out -eq 0 ]
+				then
+					break
+				elif [ $out -eq 3 ]
+				then
+					dialog --title 'Confirmação' --yesno "Tem certeza que deseja resetar a base de dados?\n\nEssa opção vai criar um novo arquivo ${db} a partir da estrutura do arquivo atual, porém não manterá as informações salvas atualmente (categorias, lojas, produtos e preços).\n\nEssa operação não pode ser desfeita." 12 70
+					if [ $? -eq 0 ]
+					then
+						tput setf 4
+						echo "[Recriando base de dados]"
+
+						tput setf 1
+						echo "Fazendo dump da base de dados atual..."
+						sqlite3 ${db} .dump | grep -v '^INSERT INTO' | grep -v '^COMMIT' > "${db}-dump"
+						echo "INSERT INTO locais (id, nome, consultar) VALUES ('0', 'Desconhecido', 'S');" >> "${db}-dump"
+						echo "INSERT INTO categorias (id, nome, url) VALUES ('0', 'Desconhecida', '/pesquisa/precos');" >> "${db}-dump"
+						echo "INSERT INTO configuracoes (item, valor) VALUES ('versao_bdados', '2.0');" >> "${db}-dump"
+						echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_min', '0');" >> "${db}-dump"
+						echo "INSERT INTO configuracoes (item, valor) VALUES ('oferta_valor_max', '100');" >> "${db}-dump"
+						echo "COMMIT;" >> "${db}-dump"
+
+						echo "Criando nova base de dados..."
+						sqlite3 -bail "${db}-novo" ".read ${db}-dump"
+						if [ $? -eq 0 ]
+						then
+							echo "Substituindo os arquivos"
+							rm -fv "${db}-dump"
+							rm -fv "${db}"
+							mv -v "${db}-novo" "${db}"
+							echo "Operação concluída com sucesso."
+						else
+							echo "Ocorreu alguma falha, porém a base atual foi mantida."
+							exit 1
+						fi
+
+						tput sgr0
+						read r
+					fi
+				fi
+			done
 			rm "$tmp" ;;
 		"A")
 			dialog --title "Sobre..." --textbox ${base}/ABOUT.md 25 60 ;;
