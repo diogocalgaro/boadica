@@ -28,12 +28,12 @@ do
 		P "Produtos"                          \
 		L "Lojas"                             \
 		C "Categorias"                        \
-		"" "=============================="   \
+		"" "==================================="   \
 		H "Carregar dados de hoje"            \
 		O "Configurações"		      \
 		E "Estatísticas da base de dados"     \
 		A "Sobre este script"                 \
-		"" "=============================="   \
+		"" "==================================="   \
 		S "Sair")
 
 	test $? -ne 0 && break
@@ -54,21 +54,24 @@ do
 
 			op2=""
 			sql_where=""
+			op3="0"
+			ordem_txt="fabricante, produto, categoria"
+			ordem_sql="order by fabricante, prod_nome, categ_nome" 
 
 			#configuracao de faixa de valores pra melhores ofertas
 			val_min="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_min';")"
 			val_max="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_max';")"
 
-			while [ "$op2" != "V" ]
+			while true
 			do
 				aguarde
-				sql="select item, descricao from vw_lista_preco ${sql_where} ${sql_limit}"
+				sql="select item, descricao from vw_lista_preco ${sql_where} ${ordem_sql} ${sql_limit}"
 				i=$(sqlite3 -list -separator " " ${db} "${sql}")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
 
 				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
-					--menu 'Produtos' 30 90 23 \
+					--menu 'Produtos' 30 105 23 \
 					V 'Voltar' \
 					B 'Buscar por um produto' \
 					T 'Ver todos' \
@@ -76,8 +79,10 @@ do
 					N 'Somente novidades' \
 					F 'Somente favoritos' \
 					D 'Consultar variações nos preços...' \
+					'' '==================================================================================================' \
 					S 'Trocar seleção de categorias visíveis' \
-					'' '==============================================================================' \
+					X 'Ordenar por... (${ordem_txt})' \
+					'' '==================================================================================================' \
 					${i})"
 
 				case "$op2" in
@@ -107,6 +112,25 @@ do
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, 'off' as opcao from categorias where id <> '0' order by 2 ${sql_limit}" | tr '\n' ' ')
 						eval "categ2=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
 						test $? -eq 0 && categ=${categ2// /,} ;;
+					"X") #ordem
+						op3=$(dialog --stdout --no-cancel --no-tags --default-item ${op3} --menu 'Ordenar por' 12 45 9 0 'fabricante, produto, categoria' 1 'categoria, produto, fabricante' 2 'produto, categoria, fabricante' 3 'preco, produto, fabricante' 4 'preco, categoria, produto')
+						case "${op3}" in
+							"0")
+								ordem_txt="fabricante, produto, categoria"
+								ordem_sql="order by fabricante, prod_nome, categ_nome" ;;
+							"1")
+								ordem_txt="categoria, produto, fabricante"
+								ordem_sql="order by categ_nome, prod_nome, fabricante" ;;
+							"2")
+								ordem_txt="produto, categoria, fabricante"
+								ordem_sql="order by prod_nome, categ_nome, fabricante" ;;
+							"3")
+								ordem_txt="preco, produto, fabricante"
+								ordem_sql="order by valorf, prod_nome, fabricante" ;;
+							"4")
+								ordem_txt="preco, categoria, produto"
+								ordem_sql="order by valorf, categ_nome, prod_nome" ;;
+						esac ;;
 					*)
 						while true
 						do
@@ -172,47 +196,49 @@ do
 				esac
 			done ;;
 		"L") #lojas
-			lojas_filtro=1
-			lojas_filtro_txt="Ver todas as lojas (DESATIVAR TODOS OS FILTROS)"
-			lojas_filtro_sql="where o.consultar='S'"
 			op2=""
+			lojas_filtro_sql="where o.consultar='S'"
 
-			while [ "$op2" != "V" ]
+			while true
 			do
 				aguarde
-				i=$(sqlite3 -list -separator " " ${db} "select id, quote(loja||'   ['||produtos||']') from (select q.id, q.loja, count(distinct p.produto) as produtos from (select l.id, l.nome||',   '||o.nome as loja from lojas l inner join locais o on (o.id = l.local) ${lojas_filtro_sql}) q left join precos p on (p.loja = q.id) group by 1, 2) order by 2 ${sql_limit};")
+				sql="	select id, quote(loja||'   [Itens: '||produtos||']') 
+					from (
+						select q.id, q.loja, count(distinct p.produto) as produtos 
+						from (
+							select l.id, l.nome||',   '||o.nome as loja 
+							from lojas l 
+							inner join locais o on (o.id = l.local)
+							${lojas_filtro_sql}
+						) q 
+						left join precos p on (p.loja = q.id) 
+						group by 1, 2
+					) order by 2
+					${sql_limit};"
+				i=$(sqlite3 -list -separator " " ${db} "${sql}")
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
-
 				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
 					--menu 'Lojas' 30 90 23 \
 					V 'Voltar' \
 					B 'Buscar por uma loja' \
-					T '"${lojas_filtro_txt}"' \
+					T 'Ver todas' \
+					C 'Somente dos bairros selecionados' \
+					'' '==============================================================================' \
 					F 'Editar filtro de bairros visíveis' \
 					'' '==============================================================================' \
 					${i})"
 
 				case "$op2" in
+					"V") #voltar
+						break ;;
 					"B") #buscar loja
 						eval "pesq=\$(dialog --stdout --title 'Consultar loja' --inputbox 'Informe o nome da loja' 8 60)"
-						if [ $? -eq 0 -a -n "$pesq" ]
-						then
-							lojas_filtro=1
-							lojas_filtro_txt="Ver todas as lojas (DESATIVAR FILTRO DE BUSCA)"
-							lojas_filtro_sql="where l.nome like '%$pesq%'"
-						fi ;;
-					"T") #ver todas as lojas, sem filtro
-						if [ $lojas_filtro -eq 1 ]
-						then
-							lojas_filtro=0
-							lojas_filtro_txt="Ver somente as lojas dos bairros selecionados (ATIVAR FILTRO DE BAIRROS)"
-							lojas_filtro_sql=""
-						else
-							lojas_filtro=1
-							lojas_filtro_txt="Ver todas as lojas (DESATIVAR TODOS OS FILTROS)"
-							lojas_filtro_sql="where o.consultar='S'"
-						fi ;;
+						lojas_filtro_sql="where l.nome like '%$pesq%'" ;;
+					"T") #ver todas
+						lojas_filtro_sql="" ;;
+					"C") #filtro bairros
+						lojas_filtro_sql="where o.consultar='S'" ;;
 					"F") #editar filtro de bairro
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 2" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
 						cod=""
@@ -346,7 +372,7 @@ do
 						fi
 
 						tput sgr0
-						read r
+						read -p "Pressione [ENTER] pra continuar" r
 					fi
 				fi
 			done

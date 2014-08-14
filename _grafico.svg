@@ -15,42 +15,24 @@
 			<polygon points="25,5 35,25 15,25" stroke="black" />
 
 			<!-- dados -->
-			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">2K Marin - BioShock 2</text>
-			<circle cx="25" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="25" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="20" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">16/07</text>
-			<circle cx="75" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="75" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="70" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">17/07</text>
-			<circle cx="125" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="125" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="120" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">22/07</text>
-			<circle cx="175" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="175" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="170" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">23/07</text>
-			<circle cx="225" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="225" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="220" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">24/07</text>
-			<circle cx="275" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="275" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="270" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">25/07</text>
-			<circle cx="325" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="325" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="320" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">29/07</text>
-			<circle cx="375" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="375" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="370" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">30/07</text>
-			<circle cx="425" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="425" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="420" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">01/08</text>
-			<circle cx="475" cy="265" r="4" fill="black" stroke="none" stroke-width="0" />
-			<text x="475" y="260" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">70</text>
-			<text x="470" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">04/08</text>
+			<text x="40" y="20" font-family="serif, Liberation Serif, MS Sans Serif" font-size="12" fill="blue">Cisco/Linksys - E900</text>
+			<circle cx="25" cy="181" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="25" y="176" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">98</text>
+			<text x="20" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">11/08</text>
+			<circle cx="75" cy="181" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="75" y="176" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">98</text>
+			<text x="70" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">12/08</text>
+			<circle cx="125" cy="184" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="125" y="179" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">97</text>
+			<text x="120" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">13/08</text>
+			<circle cx="175" cy="184" r="4" fill="black" stroke="none" stroke-width="0" />
+			<text x="175" y="179" font-family="serif, Liberation Serif, MS Sans Serif" font-weight="bold" font-size="10" fill="green">97</text>
+			<text x="170" y="485" font-family="serif, Liberation Serif, MS Sans Serif" font-size="9" fill="black">14/08</text>
 		</g>
 	</defs>
 
 	<!-- grafico -->
-	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,265 75,265 125,265 175,265 225,265 275,265 325,265 375,265 425,265 475,265 475,475 25,475" />
+	<polygon fill="#FFFACA" stroke-width="0" stroke="red" points="25,181 75,181 125,184 175,184 175,475 25,475" />
 
 	<!-- desenhando elementos salvos para ficar no topo -->
 	<use xlink:href="#antes" />
