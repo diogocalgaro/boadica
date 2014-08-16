@@ -1,6 +1,2 @@
 [_grafico.sh]
 - aumentar escala para aceitar valores maiores que 200
-
-[geral]
-- enviar o .gitignore pro github
-- arrumar outra forma de calcular o instalado=n

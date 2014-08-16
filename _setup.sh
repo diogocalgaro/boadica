@@ -4,7 +4,7 @@
 source $(dirname $0)/_config.inc
 
 #verificando se ja foi instalado
-test ${instalado:-N} == "S" && exit 0
+test -f ${base}/instalado && exit 0
 
 #funcoes
 source ${base}/_funcoes.inc
@@ -141,12 +141,6 @@ fi
 
 # SAINDO #######################################################################
 
-config="$(grep -v '^instalado' _config.inc)"
-config="${config}\ninstalado='S'"
-echo -e "${config}" > _config.inc
-if [ $? -ne 0 ]
-then
-	fatal "Falha ao salvar arquivo de configuração..."
-fi
-
+touch ${base}/instalado
+test $? -ne 0 fatal "Falha ao salvar arquivo de configuração..."
 dialog --title 'Setup' --msgbox 'Setup concluído com sucesso' 7 50
