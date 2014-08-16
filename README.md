@@ -39,7 +39,7 @@ O setup vai:
 
 4- oferecer a opção pra baixar os dados de produtos e preços do site (pode ser feito mais tarde); 
 
-5- gravar o arquivo de configurações.
+5- gravar o arquivo vazio chamado "instalado" pra indicar que já rodou o setup.
 
 Obs.: A base de dados já vem carregada com algumas categorias utilzadas pelo desenvolvedor. Para reiniciá-la vá em "Estatísticas", "Resetar BD".
 
