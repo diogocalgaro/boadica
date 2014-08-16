@@ -19,4 +19,4 @@ arq_svg="$base/_grafico.svg"
 workdir="$base/workdir"
 sql_limit="limit 500"
 max_pags=200
-instalado="N"
+instalado='S'
