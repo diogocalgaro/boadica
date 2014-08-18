@@ -71,7 +71,7 @@ do
 				i=${i//\'/\"}
 
 				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
-					--menu 'Produtos' 30 105 23 \
+					--menu 'Produtos' 30 115 23 \
 					V 'Voltar' \
 					B 'Buscar por um produto' \
 					T 'Ver todos' \
@@ -79,10 +79,10 @@ do
 					N 'Somente novidades' \
 					F 'Somente favoritos' \
 					D 'Consultar variações nos preços...' \
-					'' '==================================================================================================' \
+					'' '=========================================================================================================' \
 					S 'Trocar seleção de categorias visíveis' \
 					X 'Ordenar por... (${ordem_txt})' \
-					'' '==================================================================================================' \
+					'' '=========================================================================================================' \
 					${i})"
 
 				case "$op2" in
@@ -106,7 +106,7 @@ do
 						aguarde
 						tmp=$(mktemp)
 						sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column $db "select * from vw_diferencas_preco;" > $tmp
-						dialog --title "Variações nos preços" --textbox $tmp 50 108
+						dialog --title "Variações nos preços" --textbox $tmp 50 110
 						rm ${tmp} ;;
 					"S") #filtro seleção de categorias
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, 'off' as opcao from categorias where id <> '0' order by 2 ${sql_limit}" | tr '\n' ' ')
@@ -219,14 +219,14 @@ do
 				i=${i//$'\n'/ }
 				i=${i//\'/\"}
 				eval "op2=\$(dialog --stdout --no-cancel --no-tags \
-					--menu 'Lojas' 30 90 23 \
+					--menu 'Lojas' 30 100 23 \
 					V 'Voltar' \
 					B 'Buscar por uma loja' \
 					T 'Ver todas' \
 					C 'Somente dos bairros selecionados' \
-					'' '==============================================================================' \
+					'' '========================================================================================' \
 					F 'Editar filtro de bairros visíveis' \
-					'' '==============================================================================' \
+					'' '========================================================================================' \
 					${i})"
 
 				case "$op2" in
@@ -242,7 +242,7 @@ do
 					"F") #editar filtro de bairro
 						i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 2" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
 						cod=""
-						eval "cod=\$(dialog --stdout --checklist 'Locais visíveis' 30 60 23 ${i})"
+						eval "cod=\$(dialog --stdout --checklist 'Locais visíveis' 30 70 23 ${i})"
 		
 						if [ $? -eq 0 ]
 						then
