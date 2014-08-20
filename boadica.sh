@@ -15,6 +15,13 @@ test $? -ne 0 && exit $?
 source $(dirname $0)/_config.inc
 source ${base}/_funcoes.inc
 
+#verificando se é uma consulta rápida sem carregar a interface
+if [ -n "$1" ]
+then
+	${base}/_cli.sh "$1"
+	exit $?
+fi
+
 #laco principal
 op="P"
 while [ "$op" != "S" ]
