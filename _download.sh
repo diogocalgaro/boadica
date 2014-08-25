@@ -181,6 +181,7 @@ do
 			cont2=${cont2#*>}
 			cont2=${cont2%</td*}
 			localizacao="${cont2/'<br/>'/ - }"
+			localizacao=${localizacao#"${localizacao%%[![:space:]]*}"}
 			idlocal=$(grep -ihm1 "${localizacao}" "$arq3") #procurando o ID do LOCAL no arquivo de cache
 			idlocal=${idlocal%%;*}
 

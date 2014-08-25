@@ -48,7 +48,7 @@ do
 	case "$op" in
 		"P") #produtos
 			#exibindo o filtro de categorias logo no começo
-			i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
+			i=$(sqlite3 -list -separator ' ' $db "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
 			eval "categ=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
 
 			if [ $? -eq 0 ]
@@ -66,8 +66,8 @@ do
 			ordem_sql="order by fabricante, prod_nome, categ_nome" 
 
 			#configuracao de faixa de valores pra melhores ofertas
-			val_min="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_min';")"
-			val_max="$(sqlite3 -csv $db "select valor from configuracoes where item='oferta_valor_max';")"
+			val_min="$(sqlite3 ${db} "select valor from configuracoes where item='oferta_valor_min';")"
+			val_max="$(sqlite3 ${db} "select valor from configuracoes where item='oferta_valor_max';")"
 
 			while true
 			do
@@ -116,9 +116,15 @@ do
 						dialog --title "Variações nos preços" --textbox $tmp 50 110
 						rm ${tmp} ;;
 					"S") #filtro seleção de categorias
-						i=$(sqlite3 -csv -separator " " $db "select id, nome, 'off' as opcao from categorias where id <> '0' order by 2 ${sql_limit}" | tr '\n' ' ')
-						eval "categ2=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
-						test $? -eq 0 && categ=${categ2// /,} ;;
+						i=$(sqlite3 -list -separator ' ' $db "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
+						eval "categ=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
+						if [ $? -eq 0 ]
+						then
+							categ=${categ// /,}
+							sqlite3 ${db} "update categorias set consultar = 'N'; update categorias set consultar = 'S' where id in (${categ});"
+						else
+							continue
+						fi ;;
 					"X") #ordem
 						op3=$(dialog --stdout --no-cancel --no-tags --default-item ${op3} --menu 'Ordenar por' 12 45 9 0 'fabricante, produto, categoria' 1 'categoria, produto, fabricante' 2 'produto, categoria, fabricante' 3 'preco, produto, fabricante' 4 'preco, categoria, produto')
 						case "${op3}" in
