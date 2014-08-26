@@ -48,7 +48,7 @@ do
 	case "$op" in
 		"P") #produtos
 			#exibindo o filtro de categorias logo no começo
-			i=$(sqlite3 -list -separator ' ' $db "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
+			i=$(sqlite3 -list -separator ' ' ${db} "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
 			eval "categ=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
 
 			if [ $? -eq 0 ]
@@ -112,11 +112,11 @@ do
 					"D") #diferenças/variações nos preços
 						aguarde
 						tmp=$(mktemp)
-						sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column $db "select * from vw_diferencas_preco;" > $tmp
+						sqlite3 -cmd ".width 9 34 6 5 6 5 7 13" -header -column ${db} "select * from vw_diferencas_preco;" > $tmp
 						dialog --title "Variações nos preços" --textbox $tmp 50 110
 						rm ${tmp} ;;
 					"S") #filtro seleção de categorias
-						i=$(sqlite3 -list -separator ' ' $db "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
+						i=$(sqlite3 -list -separator ' ' ${db} "select id, quote(nome), consultar from categorias where id <> '0' order by 2 ${sql_limit}" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
 						eval "categ=\$(dialog --stdout --no-cancel --checklist 'Selecione a(s) categoria(s) para consulta' 30 60 23 ${i})"
 						if [ $? -eq 0 ]
 						then
@@ -154,7 +154,7 @@ do
 							tmpf=$(mktemp)
 							prim=1
 
-							sqlite3 -csv -separator "|" ${db} "select * from vw_produto where prod_id = '${prod_id}' and categ_id = '${categ_id}';" | while read r
+							sqlite3 -list -separator "|" ${db} "select * from vw_produto where prod_id = '${prod_id}' and categ_id = '${categ_id}';" | while read r
 							do
 								r=${r//\"}
 								IFS=$'|' read prod_id fabricante prod_nome favorito categ_id categ_nome loja_id loja_nome data valorf valor <<< "${r}"
@@ -253,7 +253,7 @@ do
 					"C") #filtro bairros
 						lojas_filtro_sql="where o.consultar='S'" ;;
 					"F") #editar filtro de bairro
-						i=$(sqlite3 -csv -separator " " $db "select id, nome, consultar from locais order by 2" | sed 's/S$/on/;s/N$/off/' | tr '\n' ' ')
+						i=$(sqlite3 -list -separator " " ${db} "select id, quote(nome), consultar from locais order by 2" | sed "s/' S/' on/;s/' N/' off/" | tr '\n' ' ')
 						cod=""
 						eval "cod=\$(dialog --stdout --checklist 'Locais visíveis' 30 70 23 ${i})"
 		
@@ -346,7 +346,7 @@ do
 			while true
 			do
 				aguarde
-				sqlite3 -cmd ".width 48" -header -column $db "select * from vw_estatisticas;" > "$tmp"
+				sqlite3 -cmd ".width 48" -header -column ${db} "select * from vw_estatisticas;" > "$tmp"
 				dialog --title "Estatísticas da base de dados" --extra-button --extra-label 'Resetar BD' --ok-label 'Ok' --textbox ${tmp} 16 60
 				out=$?
 				if [ $out -eq 0 ]

@@ -96,7 +96,7 @@ fi
 # DEFININDO CATEGORIA ##########################################################
 
 op='S'
-existe=$(sqlite3 "$db" "select count(*) from categorias where id <> '0';")
+existe=$(sqlite3 ${db} "select count(*) from categorias where id <> '0';")
 if [ ${existe:-0} -eq 0 ]
 then
 	dialog --title "Setup" --msgbox "Na próxima tela, selecione a(s) categoria(s) do site que você deseja acompanhar. Selecione apenas os subgrupos, não selecione um grupo (eles não podem ser consultados nesse script)." 9 60
@@ -115,7 +115,7 @@ then
 	#conferindo se realmente tem alguma categoria
 	if [ ${inseridas:-0} -eq 0 ]
 	then
-		existe=$(sqlite3 "$db" "select count(*) from categorias where id <> '0';")
+		existe=$(sqlite3 ${db} "select count(*) from categorias where id <> '0';")
 		if [ ${existe:-0} -eq 0 ]
 		then
 			fatal "Nenhuma categoria cadastrada no banco de dados... Recomece o setup."

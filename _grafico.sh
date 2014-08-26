@@ -92,7 +92,7 @@ EOF
 
 	esq=$(( esq + dist ))
 	esq_txt=$(( esq_txt + dist ))
-done < <(sqlite3 -csv -separator ';' ${db} "${sql}")
+done < <(sqlite3 -list -separator ';' ${db} "${sql}")
 
 esq="$(awk '{ print $NF }' $arq1 | awk -F ',' '{ printf $1 }')"
 echo -n "${esq},${zeroy} ${zerox},${zeroy}" >> "$arq1"

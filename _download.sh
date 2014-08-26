@@ -114,7 +114,7 @@ fi
 
 #obtendo cache da lista de locais pra agilizar o processo
 echo -n "Obtendo cache dos locais (bairros)... "
-sqlite3 -list -separator ";" "$db" "select id, nome from locais order by id" > "$arq3"
+sqlite3 -list -separator ";" ${db} "select id, nome from locais order by id" > "$arq3"
 test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 ult_idlocal=$(tail -n1 "$arq3")
 ult_idlocal=${ult_idlocal%%;*}
@@ -251,12 +251,12 @@ echo
 
 #gravando no banco de dados
 echo -n "Salvando no banco de dados... "
-fav=$(sqlite3 -csv "$db" "select id from produtos where favorito='S' order by 1;" | tr '\n' ',') #guardando os favoritos pra recupera-los depois da carga dos novos dados
+fav=$(sqlite3 -list ${db} "select id from produtos where favorito='S' order by 1;" | tr '\n' ',') #guardando os favoritos pra recupera-los depois da carga dos novos dados
 fav="${fav}000"
-sqlite3 -batch "$db" < "$sql"
+sqlite3 -batch ${db} < "${sql}"
 if [ $? -eq 0 ]
 then
-	sqlite3 "$db" "update produtos set favorito='S' where id in ($fav);"
+	sqlite3 ${db} "update produtos set favorito='S' where id in ($fav);"
 	if [ $? -eq 0 ]
 	then
 		echo "[OK]"
