@@ -8,7 +8,7 @@ view_opcoes="inkview ristretto eog mate-image-viewer feh xloadimage gimp inkscap
 dw_opcoes="curl aria2c wget"
 
 #itens fixos - nao alterar
-versao="v0.73"
+versao="v0.74"
 site="http://www.boadica.com.br"
 pag_vendedor="${site}/detalhevendedor.asp?codigo="
 url_base="${site}/pesquisa/precos"
