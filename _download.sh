@@ -89,7 +89,7 @@ then
 			do
 				echo -e "${url}&curpage=${i}\n out=pag${i}" >> "$arq_urls"
 			done
-			aria2c -j 5 -q -i "$arq_urls" -d ${workdir}
+			aria2c -j 8 -s 1 -q -i "$arq_urls" -d ${workdir}
 			test $? -eq 0 && echo "[OK]" || echo "[Falhou]"
 			rm "$arq_urls"
 			;;
