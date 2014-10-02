@@ -29,7 +29,7 @@ do
 		echo -e "${i}"
 	fi
 
-done < <(sqlite3 -header -column -cmd '.width 17 15 30 11 7 16 32' ${db} "\
+done < <(sqlite3 -header -column -cmd '.width 17 15 35 11 7 16 32' ${db} "\
 select c.nome as categoria, p.fabricante, p.nome as produto, r.data, r.valor_str as preco, l.nome as loja, o.nome as local \
 from produtos p \
 inner join categorias c on (c.id = p.categoria) \
