@@ -215,17 +215,17 @@ do
 			while true
 			do
 				aguarde
-				sql="	select id, quote(loja||'   [Itens: '||produtos||']') 
+				sql="	select id2, quote(loja||'   [Itens: '||produtos||']') 
 					from (
-						select q.id, q.loja, count(distinct p.produto) as produtos 
+						select q.id, q.id2, q.loja, count(distinct p.produto) as produtos
 						from (
-							select l.id, l.nome||',   '||o.nome as loja 
+							select l.id, l.id2, l.nome||',   '||o.nome as loja 
 							from lojas l 
 							inner join locais o on (o.id = l.local)
 							${lojas_filtro_sql}
 						) q 
 						left join precos p on (p.loja = q.id) 
-						group by 1, 2
+						group by 1, 2, 3
 					) order by 2
 					${sql_limit};"
 				i=$(sqlite3 -list -separator " " ${db} "${sql}")

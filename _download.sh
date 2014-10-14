@@ -30,6 +30,7 @@ urlprox=""
 urlult=""
 pag=0
 ult_pag=""
+idloja_chars=8
 
 #limpando a area temporaria de downloads
 echo "Iniciando coletor de dados..."
@@ -161,6 +162,7 @@ do
 	preco=""
 	precof=""
 	idloja=""
+	id2loja=""
 	loja=""
 	localizacao=""
 
@@ -194,7 +196,7 @@ do
 			fi
 
 			echo "$sql_insert into produtos (id, categoria, fabricante, nome, favorito) values ($idprod, '${categ_id:-0}', '$fabricante', '$produto', 'N');" >> "$sql"
-			echo "$sql_insert into lojas (id, nome, local) values ('$idloja', '$loja', '$idlocal');" >> "$sql"
+			echo "$sql_insert into lojas (id, nome, local, id2) values ('$idloja', '$loja', '$idlocal', '$id2loja');" >> "$sql"
 			echo "$sql_insert into precos (produto, loja, data, valor_num, valor_str) values ($idprod, '$idloja', '$quando', '$preco', '$precof');" >> "$sql"
 
 		elif [ "${i2:0:4}" == "<td>" ]
@@ -231,7 +233,9 @@ do
 				   loja=${cont2#*>}
 				   loja=${loja%%<*}
 				   idloja=${cont2#*codigo=}
-				   idloja=${idloja%%\'*} ;;
+				   idloja=${idloja%%\'*}
+				   id2loja=${idloja}
+				   idloja=${idloja:0:$idloja_chars} ;;
 			esac
 
 			((col++))
