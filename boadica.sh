@@ -311,6 +311,7 @@ do
 									sqlite3 ${db} "delete from precos where produto in (select id from produtos where categoria = '$op2');" && \
 									sqlite3 ${db} "delete from produtos where categoria = '$op2';" && \
 									sqlite3 ${db} "delete from categorias where id = '$op2';" && \
+									sqlite3 ${db} vacuum && \
 									dialog --msgbox "Categoria removida com sucesso" 6 40 || \
 									dialog --msgbox "Falha ao remover categoria..." 6 40
 								fi ;;
