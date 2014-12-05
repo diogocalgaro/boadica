@@ -19,3 +19,5 @@ arq_svg="$base/_grafico.svg"
 workdir="$base/workdir"
 sql_limit="limit 500"
 max_pags=200
+LANG="pt_BR.UTF-8"
+LC_ALL="pt_BR.UTF-8"

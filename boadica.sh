@@ -7,6 +7,9 @@
 #
 ################################################################################
 
+#setando configs regionais
+export LANG='pt_BR.UTF-8'
+
 #verificando a instalacao
 $(dirname $0)/_setup.sh
 test $? -ne 0 && exit $?
