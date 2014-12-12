@@ -28,12 +28,12 @@ then
 fi
 
 #parseando a pagina
-linha1=$(grep -nw -m1 '<div class="menu-dropdown-topo">' "$arq")
+linha1=$(grep --text -nw -m1 '<div class="menu-dropdown-topo">' "$arq")
 linha1=${linha1%%:*}
-linha2=$(grep -nw -m1 '<li><a href="/iniciodrivers.asp">Drivers</a></li>' "$arq")
+linha2=$(grep --text -nw -m1 '<li><a href="/iniciodrivers.asp">Drivers</a></li>' "$arq")
 linha2=${linha2%%:*}
 dif=$((linha2 - linha1))
-head -n${linha2} "$arq" | tail -n${dif} | grep '/pesquisa/' | iconv -f "ISO-8859-1" -t "UTF-8" | sed 's/^[ \t]*//' > "$arq2"
+head -n${linha2} "$arq" | tail -n${dif} | grep --text '/pesquisa/' | iconv -f "ISO-8859-1" -t "UTF-8" | sed 's/^[ \t]*//' > "$arq2"
 num_linhas=$(cat $arq2 | wc -l)
 
 #montando as opcoes pro menu
@@ -102,7 +102,7 @@ do
 	fi
 
 	i=${i//\'}
-	categ="$(grep -m1 "$i" $arq3)"
+	categ="$(grep --text -m1 "$i" $arq3)"
 	categ=${categ#*|}
 	categ=${categ%|*}
 	categ=${categ//\"}

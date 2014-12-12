@@ -56,7 +56,7 @@ then
 fi
 
 #obtendo o numero da ultima pagina
-urlult="$(grep -m1 'ltima</a>' $arq)"
+urlult="$(grep --text -m1 'ltima</a>' $arq)"
 if [ $? -eq 0 ]
 then
 	urlult=${urlult#*\'}
@@ -64,7 +64,7 @@ then
 	ult_pag=${urlult#*curpage=}
 	ult_pag=${ult_pag%%&*}
 else
-	ultpag=1
+	ult_pag=1
 fi
 if [ ${ult_pag:-0} -gt ${max_pags} ]
 then
@@ -135,7 +135,7 @@ do
 	echo -n "Processando arquivo: $arq "
 
 	#verificando se a categoria nao esta vazia
-	grep -m1 'Nenhuma oferta com estes argumentos' $arq >/dev/null 2>&1
+	grep --text -m1 'Nenhuma oferta com estes argumentos' $arq >/dev/null 2>&1
 	if [ $? -eq 0 ]
 	then
 		echo ' [VAZIO]'
@@ -143,9 +143,9 @@ do
 	fi
 
 	#salvando a parte interessante do arquivo
-	inicio="$(grep -nw -m1 '<tbody>' $arq)"
+	inicio="$(grep --text -nw -m1 '<tbody>' $arq)"
 	inicio="${inicio%%:*}"
-	final="$(grep -nw -m1 '</tbody>' $arq)"
+	final="$(grep --text -nw -m1 '</tbody>' $arq)"
 	final="${final%%:*}"
 	dif="$((final - inicio))"
 	head -n${final} "$arq" | tail -n${dif} | iconv -f "ISO-8859-1" -t "UTF-8" > "$arq2"
@@ -184,7 +184,7 @@ do
 			cont2=${cont2%</td*}
 			localizacao="${cont2/'<br/>'/ - }"
 			localizacao=${localizacao#"${localizacao%%[![:space:]]*}"}
-			idlocal=$(grep -ihm1 "${localizacao}" "$arq3") #procurando o ID do LOCAL no arquivo de cache
+			idlocal=$(grep --text -ihm1 "${localizacao}" "$arq3") #procurando o ID do LOCAL no arquivo de cache
 			idlocal=${idlocal%%;*}
 
 			if [ -z "$idlocal" ] #novo local
